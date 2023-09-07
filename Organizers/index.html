@@ -11,8 +11,8 @@
     <title>Organizers | WVLL</title>
     <style>
       body {
-  font-family: 'Times New Roman', serif;
-}
+        font-family: "Times New Roman", serif;
+      }
       /* Default style for navigation links */
       .navigation a {
         color: black; /* Default color */
@@ -26,15 +26,45 @@
         /* text-shadow: 2px 2px black */
         /* text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; Black outline */
       }
+      a:hover {
+        color: navy;
+      }
+
+      .banner {
+            position: relative; 
+            /* border: 2px solid #000;  */
+             padding: 8px; 
+             /* top:2px; */
+        }
+
+        /* Add CSS for the "top-left" class within the banner */
+        .banner .top-left {
+            position: absolute; /* Set top-left to absolute positioning */
+            top: 8px; /* Adjust top position as needed */
+            left: 8px; /* Adjust left position as needed */
+            right: 10px; /* Adjust left position as needed */
+            /* background-color: #f2f2f2; */
+            padding: 10px; /* Add padding to the top-left content */
+            width: calc(98.5% - 20px); /* Adjust width as needed */
+            height: calc(16% - 20px); /* Adjust height as needed */
+            /* border: 2px solid #000;  */
+            /* padding: 10px; Add some padding to separate the content from the border */ 
+        }
     </style>
   </head>
 
   <body>
     <div class="banner">
-      <img src="assets/banner.jpg" alt="Conference Template Banner" style="max-width: 100%;" />
+      <img
+        src="assets/banner.jpg"
+        alt="Conference Template Banner"
+        style="max-width: 100%"
+      />
       <div class="top-left">
-        <span class="title2" style="line-height: 1;">Workshop on Vision-Based Understanding <br>for Low-Resource Languages (WVLL)</span>
-        .
+        <span class="title2" style="line-height: 1.33;color: rgb(24, 134, 134);"
+          >Workshop on Vision-Based Understanding <br />for Low-Resource
+          Languages (WVLL)</span
+        >
       </div>
       <div class="bottom-right">
         January 3-7, 2024 <br />
@@ -45,16 +75,13 @@
     <table class="navigation">
       <tr>
         <td class="navigation">
-          <a title="Conference Home Page" href=".">Home</a>
+          <a  title="Conference Home Page" href=".">Home</a>
         </td>
         <td class="navigation">
-          <a title="Register for the Conference" href="registration">About</a>
+          <a title="About the Conference" href="About">About</a>
         </td>
         <td class="navigation">
-          <a
-            class="current"
-            title="Directions to the Conference"
-            href="directions"
+          <a class="current" title="Organizers of the Conference" href="Organizers"
             >Organizers</a
           >
         </td>
@@ -62,17 +89,24 @@
           <a title="Conference Program" href="program">Program</a>
         </td>
         <td class="navigation">
-          <a title="Conference Flyer" href="flyer">Social Impact</a>
+          <a title="Conference Social Impact" href="Social Impact"
+            >Social Impact</a
+          >
         </td>
       </tr>
     </table>
+
     <br />
 
-    <h2 style="color: rgb(24, 134, 134);">Brief bios of organizers:</h2>
+    <h2 style="color: rgb(24, 134, 134)">Brief bios of organizers:</h2>
     <ul>
-      <li style="text-align: justify;">
-        <img src="assets/Fuad-Rahman.jpg" alt="Fuad Rahman" style="max-width: 100px; float: left; margin-right: 10px;">
-        <strong >Fuad Rahman:</strong> Fuad Rahman, Ph.D., is an academician and
+      <li style="text-align: justify">
+        <img
+          src="assets/Fuad-Rahman.jpg"
+          alt="Fuad Rahman"
+          style="max-width: 100px; float: left; margin-right: 10px"
+        />
+        <strong>Fuad Rahman:</strong> Fuad Rahman, Ph.D., is an academician and
         entrepreneur, known for founding Apurba Technologies, a company
         specializing in machine learning applications. He also holds the
         position of Adjunct Professor at the Department of Biomedical
@@ -106,8 +140,12 @@
         <a href="http://apurbatech.com/" target="_blank">apurbatech.com</a>
       </li>
       <br />
-      <li style="text-align: justify;">
-        <img src="assets/sak.jpg" alt="Syed_akhter_hossain" style="max-width: 100px; float: left; margin-right: 10px;">
+      <li style="text-align: justify">
+        <img
+          src="assets/sak.jpg"
+          alt="Syed_akhter_hossain"
+          style="max-width: 100px; float: left; margin-right: 10px"
+        />
         <strong>Syed Akhter Hossain:</strong> Dr. Syed Akhter Hossain is an
         esteemed figure in the realm of computer science and engineering, with a
         long history of making substantial contributions to education, research,
@@ -146,8 +184,12 @@
         </a>
       </li>
       <br />
-      <li style="text-align: justify;">
-        <img src="assets/sa.jpg" alt="Sheikh_abujar" style="max-width: 100px; float: left; margin-right: 10px;">
+      <li style="text-align: justify">
+        <img
+          src="assets/sa.jpg"
+          alt="Sheikh_abujar"
+          style="max-width: 100px; float: left; margin-right: 10px"
+        />
         <strong>Sheikh Abujar:</strong> Sheikh Abujar is a prominent researcher
         with a focus on deep learning, computer vision, and speech recognition
         applications. Currently affiliated with the Knowledge Discovery and Data
@@ -176,10 +218,14 @@
         <a href="https://sites.google.com/site/iamabujarsheikh" target="_blank"
           >https://sites.google.com/site/iamabujarsheikh</a
         >
-      </li >
+      </li>
       <br />
-      <li style="text-align: justify;">
-        <img src="assets/shahariar-rabby.jpg" alt="shahariar-rabby" style="max-width: 100px; float: left; margin-right: 10px;">
+      <li style="text-align: justify">
+        <img
+          src="assets/shahariar-rabby.jpg"
+          alt="shahariar-rabby"
+          style="max-width: 100px; float: left; margin-right: 10px"
+        />
         <strong>AKM Shahariar Azad Rabby:</strong> Shahariar Rabby is a
         distinguished professional whose passion for artificial intelligence has
         driven his impressive career in computer science and engineering.
@@ -209,8 +255,12 @@
         <a href="https://rabby.dev/" target="_blank">rabby.dev</a>
       </li>
       <br />
-      <li style="text-align: justify;">
-        <img src="assets/SMUN.jpg" alt="Muntaser_Syed" style="max-width: 100px; float: left; margin-right: 10px;">
+      <li style="text-align: justify">
+        <img
+          src="assets/SMUN.jpg"
+          alt="Muntaser_Syed"
+          style="max-width: 100px; float: left; margin-right: 10px"
+        />
         <strong>Muntaser Syed:</strong> Muntaser Syed is a GPU Developer
         Advocate at NVIDIA. He is the technical lead for the Open Hackathons
         team at NVIDIA which is also part of the OpenACC Organization; where his
