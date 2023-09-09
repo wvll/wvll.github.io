@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <base href=".." />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
     <meta name="description" content="Conference Template" />
     <meta name="resource-type" content="document" />
     <meta name="distribution" content="global" />
     <meta name="KeyWords" content="Conference" />
+    <meta name="viewport" content="width=device-width" />
     <title>About | WVLL</title>
     <style>
       body {
@@ -47,6 +49,13 @@
             /* border: 2px solid #000;  */
             
         }
+
+        @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .container {
+          padding: 20px;
+        }
+      }
     </style>
   </head>
 
@@ -92,7 +101,7 @@
     </table>
 
     <br />
-
+<div class="container">
     <h2 style="color: rgb(24, 134, 134);">Motivation:</h2>
     <p style="text-align: justify;">
       The "Workshop on Vision-Based Understanding for Low-Resource Languages"
@@ -153,7 +162,7 @@
       enriching lives across linguistic communities and contributing to a more
       equitable technological landscape.
     </p>
-
+  </div>
     <!-- <footer>
       &copy; Conference Organizers &nbsp;|&nbsp; Design by
       <a href="https://github.com/mikepierce">Mike Pierce</a>
