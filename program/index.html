@@ -2,219 +2,216 @@
 <html lang="en">
   <head>
     <base href=".." />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <script
-      type="text/javascript"
-      async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default"
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
     ></script>
     <meta name="description" content="Conference Template" />
     <meta name="resource-type" content="document" />
     <meta name="distribution" content="global" />
     <meta name="KeyWords" content="Conference" />
+    <meta name="viewport" content="width=device-width" />
     <title>Program | WVLL</title>
     <style>
-                  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
-                  /* *,
-                  *::before,
-                  *::after {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                  } */
+          /* *,
+                            *::before,
+                            *::after {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                            } */
 
-                  /* body {
-                    --color: rgba(30, 30, 30);
-                    --bgColor: rgba(245, 245, 245);
-                    min-height: 100vh;
-                    display: grid;
-                    align-content: center;
-                    gap: 2rem;
-                    padding: 2rem;
-                    font-family: "Poppins", sans-serif;
-                    color: var(--color);
-                    background: var(--bgColor);
-                  } */
+          /* body {
+                              --color: rgba(30, 30, 30);
+                              --bgColor: rgba(245, 245, 245);
+                              min-height: 100vh;
+                              display: grid;
+                              align-content: center;
+                              gap: 2rem;
+                              padding: 2rem;
+                              font-family: "Poppins", sans-serif;
+                              color: var(--color);
+                              background: var(--bgColor);
+                            } */
 
-                  h1 {
-                    text-align: center;
-                  }
+          h1 {
+            text-align: center;
+          }
 
-                  ul {
-                    --col-gap: 2rem;
-                    --row-gap: 2rem;
-                    --line-w: 0.25rem;
-                    display: grid;
-                    grid-template-columns: var(--line-w) 1fr;
-                    grid-auto-columns: max-content;
-                    column-gap: var(--col-gap);
-                    list-style: none;
-                    width: min(60rem, 90%);
-                    margin-inline: auto;
-                  }
+          ul {
+            --col-gap: 2rem;
+            --row-gap: 2rem;
+            --line-w: 0.25rem;
+            display: grid;
+            grid-template-columns: var(--line-w) 1fr;
+            grid-auto-columns: max-content;
+            column-gap: var(--col-gap);
+            list-style: none;
+            width: min(60rem, 90%);
+            margin-inline: auto;
+          }
 
-                  /* line */
-                  ul::before {
-                    content: "";
-                    grid-column: 1;
-                    grid-row: 1 / span 20;
-                    background: rgb(225, 225, 225);
-                    border-radius: calc(var(--line-w) / 2);
-                  }
+          /* line */
+          ul::before {
+            content: "";
+            grid-column: 1;
+            grid-row: 1 / span 20;
+            background: rgb(225, 225, 225);
+            border-radius: calc(var(--line-w) / 2);
+          }
 
-                  /* columns*/
+          /* columns*/
 
-                  /* row gaps */
-                  ul li:not(:last-child) {
-                    margin-bottom: var(--row-gap);
-                  }
+          /* row gaps */
+          ul li:not(:last-child) {
+            margin-bottom: var(--row-gap);
+          }
 
-                  /* card */
-                  ul li {
-                    grid-column: 2;
-                    --inlineP: 1.5rem;
-                    margin-inline: var(--inlineP);
-                    grid-row: span 2;
-                    display: grid;
-                    grid-template-rows: min-content min-content min-content;
-                  }
+          /* card */
+          ul li {
+            grid-column: 2;
+            --inlineP: 1.5rem;
+            margin-inline: var(--inlineP);
+            grid-row: span 2;
+            display: grid;
+            grid-template-rows: min-content min-content min-content;
+          }
 
-                  /* date */
-                  ul li .date {
-                    --dateH: 3rem;
-                    height: var(--dateH);
-                    margin-inline: calc(var(--inlineP) * -1);
+          /* date */
+          ul li .date {
+            --dateH: 3rem;
+            height: var(--dateH);
+            margin-inline: calc(var(--inlineP) * -1);
 
-                    text-align: center;
-                    background-color: var(--accent-color);
+            text-align: center;
+            background-color: var(--accent-color);
 
-                    color: white;
-                    font-size: 1.25rem;
-                    font-weight: 700;
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
 
-                    display: grid;
-                    place-content: center;
-                    position: relative;
+            display: grid;
+            place-content: center;
+            position: relative;
 
-                    border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
-                  }
+            border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+          }
 
-                  /* date flap */
-                  ul li .date::before {
-                    content: "";
-                    width: var(--inlineP);
-                    aspect-ratio: 1;
-                    background: var(--accent-color);
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
-                    position: absolute;
-                    top: 100%;
+          /* date flap */
+          ul li .date::before {
+            content: "";
+            width: var(--inlineP);
+            aspect-ratio: 1;
+            background: var(--accent-color);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+            position: absolute;
+            top: 100%;
 
-                    clip-path: polygon(0 0, 100% 0, 0 100%);
-                    right: 0;
-                  }
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+            right: 0;
+          }
 
-                  /* circle */
-                  ul li .date::after {
-                    content: "";
-                    position: absolute;
-                    width: 2rem;
-                    aspect-ratio: 1;
-                    background: var(--bgColor);
-                    border: 0.3rem solid var(--accent-color);
-                    border-radius: 50%;
-                    top: 50%;
+          /* circle */
+          ul li .date::after {
+            content: "";
+            position: absolute;
+            width: 2rem;
+            aspect-ratio: 1;
+            background: var(--bgColor);
+            border: 0.3rem solid var(--accent-color);
+            border-radius: 50%;
+            top: 50%;
 
-                    transform: translate(50%, -50%);
-                    right: calc(100% + var(--col-gap) + var(--line-w) / 2);
-                  }
+            transform: translate(50%, -50%);
+            right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+          }
 
-                  /* title descr */
-                  ul li .title,
-                  ul li .descr {
-                    background: var(--bgColor);
-                    position: relative;
-                    padding-inline: 1.5rem;
-                  }
-                  ul li .title {
-                    overflow: hidden;
-                    padding-block-start: 1.5rem;
-                    padding-block-end: 1rem;
-                    font-weight: 500;
-                  }
-                  ul li .descr {
-                    padding-block-end: 1.5rem;
-                    font-weight: 300;
-                  }
+          /* title descr */
+          ul li .title,
+          ul li .descr {
+            background: var(--bgColor);
+            position: relative;
+            padding-inline: 1.5rem;
+          }
+          ul li .title {
+            overflow: hidden;
+            padding-block-start: 1.5rem;
+            padding-block-end: 1rem;
+            font-weight: 500;
+          }
+          ul li .descr {
+            padding-block-end: 1.5rem;
+            font-weight: 300;
+          }
 
-                  /* shadows */
-                  ul li .title::before,
-                  ul li .descr::before {
-                    content: "";
-                    position: absolute;
-                    width: 90%;
-                    height: 0.5rem;
-                    background: rgba(0, 0, 0, 0.5);
-                    left: 50%;
-                    border-radius: 50%;
-                    filter: blur(4px);
-                    transform: translate(-50%, 50%);
-                  }
-                  ul li .title::before {
-                    bottom: calc(100% + 0.125rem);
-                  }
-                  ul.simple{
-                      list-style-type: circle;
-                  }
-                  ul li .descr::before {
-                    z-index: -1;
-                    bottom: 0.25rem;
-                  }
+          /* shadows */
+          ul li .title::before,
+          ul li .descr::before {
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 0.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            left: 50%;
+            border-radius: 50%;
+            filter: blur(4px);
+            transform: translate(-50%, 50%);
+          }
+          ul li .title::before {
+            bottom: calc(100% + 0.125rem);
+          }
+          ul.simple {
+            list-style-type: circle;
+          }
+          ul li .descr::before {
+            z-index: -1;
+            bottom: 0.25rem;
+          }
 
-                  @media (min-width: 40rem) {
-                    ul {
-                      grid-template-columns: 1fr var(--line-w) 1fr;
-                    }
-                    ul::before {
-                      grid-column: 2;
-                    }
-                    ul li:nth-child(odd) {
-                      grid-column: 1;
-                    }
-                    ul li:nth-child(even) {
-                      grid-column: 3;
-                    }
-
-                    /* start second card */
-                    ul li:nth-child(2) {
-                      grid-row: 2/4;
-                    }
-
-                    ul li:nth-child(odd) .date::before {
-                      clip-path: polygon(0 0, 100% 0, 100% 100%);
-                      left: 0;
-                    }
-
-                    ul li:nth-child(odd) .date::after {
-                      transform: translate(-50%, -50%);
-                      left: calc(100% + var(--col-gap) + var(--line-w) / 2);
-                    }
-                    ul li:nth-child(odd) .date {
-                      border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
-                    }
-/*                     .descr {
-              display: none;
+          @media (min-width: 40rem) {
+            ul {
+              grid-template-columns: 1fr var(--line-w) 1fr;
+            }
+            ul::before {
+              grid-column: 2;
+            }
+            ul li:nth-child(odd) {
+              grid-column: 1;
+            }
+            ul li:nth-child(even) {
+              grid-column: 3;
             }
 
-            .title:hover + .descr {
-              display: block;
-              color: black;
-                  } */
-                  body {
-        font-family: 'Times New Roman', serif;
+            /* start second card */
+            ul li:nth-child(2) {
+              grid-row: 2/4;
+            }
 
-     
-      }
+            ul li:nth-child(odd) .date::before {
+              clip-path: polygon(0 0, 100% 0, 100% 100%);
+              left: 0;
+            }
+
+            ul li:nth-child(odd) .date::after {
+              transform: translate(-50%, -50%);
+              left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+            }
+            ul li:nth-child(odd) .date {
+              border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+            }
+          }
+            body {
+              font-family: "Times New Roman", serif;
+            }
             /* Default style for navigation links */
             .navigation a {
               color: black; /* Default color */
@@ -230,36 +227,56 @@
             }
 
             /* Default style for all links */
-      a {
-        color: blue; /* Default link color (blue) */
-        text-decoration: none; /* Remove underline */
-      }
+            a {
+              color: blue; /* Default link color (blue) */
+              text-decoration: none; /* Remove underline */
+            }
 
-      /* Change link color to navy blue on hover */
-      a:hover {
-        color: navy;
-      }
-     
-      .banner {
-            position: relative; 
-            /* border: 2px solid #000;  */
-             padding: 8px; 
-             /* top:2px; */
-        }
+            /* Change link color to navy blue on hover */
+            a:hover {
+              color: navy;
+            }
 
-        /* Add CSS for the "top-left" class within the banner */
-        .banner .top-left {
-            position: absolute; /* Set top-left to absolute positioning */
-            top: 8px; /* Adjust top position as needed */
-            left: 8px; /* Adjust left position as needed */
-            right: 10px; /* Adjust left position as needed */
-            /* background-color: #f2f2f2; */
-            padding: 10px; /* Add padding to the top-left content */
-            width: calc(98.5% - 20px); /* Adjust width as needed */
-            height: calc(16% - 20px); /* Adjust height as needed */
-            /* border: 2px solid #000;  */
-            /* padding: 10px; Add some padding to separate the content from the border */ 
+            .banner {
+              position: relative;
+              /* border: 2px solid #000;  */
+              padding: 8px;
+              /* top:2px; */
+            }
+
+            /* Add CSS for the "top-left" class within the banner */
+            .banner .top-left {
+              position: absolute; /* Set top-left to absolute positioning */
+              top: 8px; /* Adjust top position as needed */
+              left: 8px; /* Adjust left position as needed */
+              right: 10px; /* Adjust left position as needed */
+              /* background-color: #f2f2f2; */
+              padding: 10px; /* Add padding to the top-left content */
+              width: calc(98.5% - 20px); /* Adjust width as needed */
+              height: calc(16% - 20px); /* Adjust height as needed */
+              /* border: 2px solid #000;  */
+              /* padding: 10px; Add some padding to separate the content from the border */
+            }
+
+          .tabular{
+            display: block;
+          }
+          .listview{
+            display: none;
         }
+          @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .container {
+          padding: 20px;
+        }
+        .listview{
+          display: block;
+          padding: 20px;
+        }
+        .tabular{
+            display: none;
+          }
+      }
     </style>
   </head>
 
@@ -271,7 +288,7 @@
         style="max-width: 100%"
       />
       <div class="top-left">
-        <span class="title2" style="line-height: 1.33;color: rgb(24, 134, 134);"
+        <span class="title2" style="line-height: 1.33; color: rgb(24, 134, 134)"
           >Workshop on Vision-Based Understanding <br />for Low-Resource
           Languages (WVLL)</span
         >
@@ -296,308 +313,414 @@
           >
         </td>
         <td class="navigation">
-          <a class="current"  title="Conference Program" href="program">Program</a>
+          <a class="current" title="Conference Program" href="program"
+            >Program</a
+          >
         </td>
         <td class="navigation">
-          <a title="Conference Social Impact" href="social_impact">Social Impact</a>
+          <a title="Conference Social Impact" href="social_impact"
+            >Social Impact</a
+          >
         </td>
       </tr>
     </table>
     <br />
 
-    
+    <div class="container">
+      <h2 style="color: rgb(24, 134, 134)">Technical Program Committee:</h2>
+      <h6>(Names in alphabetical order)</h6>
+      <br />
 
-    <h2 style="color: rgb(24, 134, 134)">Technical Program Committee:</h2>
-    <h6>(Names in alphabetical order)</h6>
-    <br />
-    <table>
-      <tr>
-        <th><strong>Reviewers</strong></th>
-        <th><strong>Email</strong></th>
-        <th><strong>Organization</strong></th>
-      </tr>
-      <tr>
-        <td>Abdus Sattar</td>
-        <td><a href=""></a></td>
-        <td>Daffodil International University, Bangladesh</td>
-      </tr>
-      <tr>
-        <td>Abu Kaisar Mohammad Masum</td>
-        <td>
-          <a href="amasum2022@my.fit.edu">amasum2022@my.fit.edu</a>
-        </td>
-        <td>Florida Institute of Technology,USA</td>
-      </tr>
-      <tr>
-        <td>Angelina Geetha</td>
-        <td>
-          <a href="angelinag@hindustanuniv.ac.in">angelinag@hindustanuniv.ac.in</a>
-        </td>
-        <td>Hindustan Institute of Technology and Science,India</td>
-      </tr>
-      <tr>
-        <td>Ghalib Hussaiyn</td>
-        <td>
-          <a
-            href="ghalib@conneqted.io"
-            >ghalib@conneqted.io</a
-          >
-        </td>
-        <td>PayPal</td>
-      </tr>
-      <tr>
-        <td>Hasmot Ali</td>
-        <td>
-          <a href="hasmot23@gmail.com">hasmot23@gmail.com</a> 
-        </td>
-        <td>Apurba Technologies Ltd</td>
-      </tr>
-      <tr>
-        <td>Md. Fahad Hossain</td>
-        <td>
-          <a href=""></a>
-        </td>
-        <td>Daffodil International University, Bangladesh</td>
-      </tr>
-      <tr>
-        <td>Md. Sanzidul Islam</td>
-        <td>
-          <a href="sanzidikawsar@gmail.com"
-            >sanzidikawsar@gmail.com
-          </a>
-        </td>
-        <td>King Abdulaziz University, Saudi Arabia</td>
-      </tr>
-      <tr>
-        <td>Mirza Sami</td>
-        <td>
-          <a href="msami@dekaresearch.com"
-            >msami@dekaresearch.com</a
-          >
-        </td>
-        <td>Deka Research & Development</td>
-      </tr>
-      <tr>
-        <td>Mohammad Shorif Uddin</td>
-        <td>
-          <a href="shorifuddin@gmail.com">shorifuddin@gmail.com</a>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Mouhaydine Tlemcani</td>
-        <td>
-          <a href="tlem@uevora.pt">tlem@uevora.pt</a>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Nabeel Mahmud</td>
-        <td>
-          <a href="nabeel.mohammed@northsouth.edu">nabeel.mohammed@northsouth.edu</a>
-        </td>
-        <td>North South University, Bangladesh</td>
-      </tr>
-      <tr>
-        <td>Naveed Mahmud</td>
-        <td>
-          <a href="nmahmud@fit.edu">nmahmud@fit.edu</a>
-        </td>
-        <td>Florida Institute of Technology, USA</td>
-      </tr>
-      <tr>
-        <td>Nushrat Jahan Ria</td>
-        <td>
-          <a href="nushratria.cse@diu.edu.bd">nushratria.cse@diu.edu.bd</a>
-        </td>
-        <td>Daffodil International University, Bangladesh</td>
-      </tr>
-      <tr>
-        <td>Pratim Saha</td>
-        <td>
-          <a href="psaha@uab.edu">psaha@uab.edu</a>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>S. M. Mazharul Hoque Chowdhury Sowrav</td>
-        <td>
-          <a href=""
-            >
-          </a>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>S. R. Subramanya</td>
-        <td>
-          <a href="raga72@gmail.com"
-            >raga72@gmail.com
-          </a>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>S.M. Saiful Islam Badhon</td>
-        <td>
-          <a href="saifulbadhon.sb2@gmail.com"
-            >saifulbadhon.sb2@gmail.com
-          </a>
-        </td>
-        <td>University of North Texas, USA</td>
-      </tr>
-      <tr>
-        <td>Saif Islam</td>
-        <td>
-          <a href="asmsaifool.islam@schwab.com"
-            >asmsaifool.islam@schwab.com
-          </a>
-        </td>
-        <td>Charles Schwab</td>
-      </tr>
-      <tr>
-        <td>Sandeep Bodduluri</td>
-        <td>
-          <a href="sboddulu@uab.edu"
-            >sboddulu@uab.edu
-          </a>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Sharun Akter Khushbu</td>
-        <td>
-          <a href="sharun.cse@diu.edu.bd "
-            >sharun.cse@diu.edu.bd 
-          </a>
-        </td>
-        <td>Daffodil International University, Bangladesh</td>
-      </tr>
-      <tr>
-        <td>Sheak R. Haider Noori</td>
-        <td>
-          <a href="mailto:drnoori@daffodilvarsity.edu.bd"
-            >drnoori@daffodilvarsity.edu.bd
-          </a>
-        </td>
-        <td>Daffodil International University, Bangladesh</td>
-      </tr>
-      <tr>
-        <td>Syed Ashiqur Rahman</td>
-        <td>
-          <a href=""
-            >
-          </a>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Tanvir Ahmed</td>
-        <td>
-          <a href="Tanvir.Ahmed@ucf.edu"
-            >Tanvir.Ahmed@ucf.edu
-          </a>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Tozammel Hossain</td>
-        <td>
-          <a href="tozammel.hossain@unt.edu"
-            >tozammel.hossain@unt.edu
-          </a>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Ukash Nakarmi</td>
-        <td>
-          <a href="unakarmi@uark.edu"
-            >unakarmi@uark.edu
-          </a>
-        </td>
-        <td>University of Arkansas, USA</td>
-      </tr>
-    </table>
-
-
-    
-    <br />
-    <h4 style="color: rgb(24, 134, 134)">
-      <strong>Workshop Format:</strong> Full-Day
-    </h4>
-
-    <h2 style="color: rgb(24, 134, 134)">Preliminary Schedule</h2>
-    <ul class="sp">
-      <li style="--accent-color: #41516c">
-        <div class="date">9:00 AM - 10:30 AM</div>
-        <div class="title">Session 1: Introduction and Keynote</div>
-        <div class="descr">
-          <td class="abstract">
-            <ol >
-              <li><strong> Address and Introduction to the Workshop</strong></li>
-              <li><strong>Keynote Speaker: Prominent Researcher in the Field</strong></li>
-              <li><strong>Keynote Speaker: Prominent Researcher in the Field</strong></li>
-            </ol>
+       <table class="tabular">
+        <tr>
+          <th><strong>Reviewers</strong></th>
+          <th><strong>Email</strong></th>
+          <th><strong>Organization</strong></th>
+        </tr>
+        <tr>
+          <td>Abdus Sattar</td>
+          <td><a href=""></a></td>
+          <td>Daffodil International University, Bangladesh</td>
+        </tr>
+        <tr>
+          <td>Abu Kaisar Mohammad Masum</td>
+          <td>
+            <a href="amasum2022@my.fit.edu">amasum2022@my.fit.edu</a>
           </td>
-        </div>
-      </li>
-      <li style="--accent-color: #fbca3e">
-        <div class="date">11 AM - 12 PM</div>
-        <div class="title">Session 2: Research Presentations</div>
-        
-      </li>
-      <li style="--accent-color: #e24a68">
-        <div class="date">12:15 PM - 1:30 PM</div>
-        <div class="title">Session 3: Research Presentations</div>
-        
-      </li>
-      <li style="--accent-color: #1b5f8c">
-        <div class="date">1:45 PM - 3 PM</div>
-        <div class="title">Session 4: Research Presentations</div>
-        
-      </li>
-      <li style="--accent-color: #4cadad">
-        <div class="date">3:15 PM - 4:30 PM</div>
-        <div class="title">Session 5: Research Presentations</div>
-        
-      </li>
-      <li style="--accent-color: #4cadad">
-        <div class="date">4:30 AM - 5:30 PM</div>
-        <div class="title">Session 6: Panel Discussion</div>
-        <div class="descr">
-          <tr>
+          <td>Florida Institute of Technology,USA</td>
+        </tr>
+        <tr>
+          <td>Angelina Geetha</td>
+          <td>
+            <a href="angelinag@hindustanuniv.ac.in"
+              >angelinag@hindustanuniv.ac.in</a
+            >
+          </td>
+          <td>Hindustan Institute of Technology and Science,India</td>
+        </tr>
+        <tr>
+          <td>Ghalib Hussaiyn</td>
+          <td>
+            <a href="ghalib@conneqted.io">ghalib@conneqted.io</a>
+          </td>
+          <td>PayPal</td>
+        </tr>
+        <tr>
+          <td>Hasmot Ali</td>
+          <td>
+            <a href="hasmot23@gmail.com">hasmot23@gmail.com</a>
+          </td>
+          <td>Apurba Technologies Ltd</td>
+        </tr>
+        <tr>
+          <td>Md. Fahad Hossain</td>
+          <td>
+            <a href=""></a>
+          </td>
+          <td>Daffodil International University, Bangladesh</td>
+        </tr>
+        <tr>
+          <td>Md. Sanzidul Islam</td>
+          <td>
+            <a href="sanzidikawsar@gmail.com">sanzidikawsar@gmail.com </a>
+          </td>
+          <td>King Abdulaziz University, Saudi Arabia</td>
+        </tr>
+        <tr>
+          <td>Mirza Sami</td>
+          <td>
+            <a href="msami@dekaresearch.com">msami@dekaresearch.com</a>
+          </td>
+          <td>Deka Research & Development</td>
+        </tr>
+        <tr>
+          <td>Mohammad Shorif Uddin</td>
+          <td>
+            <a href="shorifuddin@gmail.com">shorifuddin@gmail.com</a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Mouhaydine Tlemcani</td>
+          <td>
+            <a href="tlem@uevora.pt">tlem@uevora.pt</a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Nabeel Mahmud</td>
+          <td>
+            <a href="nabeel.mohammed@northsouth.edu"
+              >nabeel.mohammed@northsouth.edu</a
+            >
+          </td>
+          <td>North South University, Bangladesh</td>
+        </tr>
+        <tr>
+          <td>Naveed Mahmud</td>
+          <td>
+            <a href="nmahmud@fit.edu">nmahmud@fit.edu</a>
+          </td>
+          <td>Florida Institute of Technology, USA</td>
+        </tr>
+        <tr>
+          <td>Nushrat Jahan Ria</td>
+          <td>
+            <a href="nushratria.cse@diu.edu.bd">nushratria.cse@diu.edu.bd</a>
+          </td>
+          <td>Daffodil International University, Bangladesh</td>
+        </tr>
+        <tr>
+          <td>Pratim Saha</td>
+          <td>
+            <a href="psaha@uab.edu">psaha@uab.edu</a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>S. M. Mazharul Hoque Chowdhury Sowrav</td>
+          <td>
+            <a href=""> </a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>S. R. Subramanya</td>
+          <td>
+            <a href="raga72@gmail.com">raga72@gmail.com </a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>S.M. Saiful Islam Badhon</td>
+          <td>
+            <a href="saifulbadhon.sb2@gmail.com">saifulbadhon.sb2@gmail.com </a>
+          </td>
+          <td>University of North Texas, USA</td>
+        </tr>
+        <tr>
+          <td>Saif Islam</td>
+          <td>
+            <a href="asmsaifool.islam@schwab.com"
+              >asmsaifool.islam@schwab.com
+            </a>
+          </td>
+          <td>Charles Schwab</td>
+        </tr>
+        <tr>
+          <td>Sandeep Bodduluri</td>
+          <td>
+            <a href="sboddulu@uab.edu">sboddulu@uab.edu </a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Sharun Akter Khushbu</td>
+          <td>
+            <a href="sharun.cse@diu.edu.bd ">sharun.cse@diu.edu.bd </a>
+          </td>
+          <td>Daffodil International University, Bangladesh</td>
+        </tr>
+        <tr>
+          <td>Dr. Sheak R. Haider Noori</td>
+          <td>
+            <a href="mailto:drnoori@daffodilvarsity.edu.bd"
+              >drnoori@daffodilvarsity.edu.bd
+            </a>
+          </td>
+          <td>Daffodil International University, Bangladesh</td>
+        </tr>
+        <tr>
+          <td>Syed Ashiqur Rahman</td>
+          <td>
+            <a href=""> </a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tanvir Ahmed</td>
+          <td>
+            <a href="Tanvir.Ahmed@ucf.edu">Tanvir.Ahmed@ucf.edu </a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tozammel Hossain</td>
+          <td>
+            <a href="tozammel.hossain@unt.edu">tozammel.hossain@unt.edu </a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ukash Nakarmi</td>
+          <td>
+            <a href="unakarmi@uark.edu">unakarmi@uark.edu </a>
+          </td>
+          <td>University of Arkansas, USA</td>
+        </tr>
+      </table> 
+
+      <div class="listview">
+        <ol >
+          <li>Abdus Sattar, Daffodil International University, Bangladesh</li>
+          <li>
+            Abu Kaisar Mohammad Masum, Florida Institute of Technology,USA.<a
+              class="mail"
+              href="mailto:amasum2022@my.fit.edu"
+              >Contact</a
+            >
+          </li>
+          <li>
+            Angelina Geetha, Hindustan Institute of Technology and
+            Science,India.
+            <a class="mail" href="mailto:angelinag@hindustanuniv.ac.in"
+              >Contact</a
+            >
+          </li>
+          <li>
+            Ghalib Hussaiyn, PayPal.
+            <a class="mail" href="mailto:ghalib@conneqted.io">Contact</a>
+          </li>
+          <li>
+            Hasmot Ali, Apurba Technologies Ltd.
+            <a class="mail" href="mailto:	hasmot23@gmail.com">Contact</a>
+          </li>
+          <li>
+            Md. Fahad Hossain, Daffodil International University, Bangladesh.
+            <a class="mail" href="">Contact</a>
+          </li>
+          <li>
+            Md. Sanzidul Islam, King Abdulaziz University, Saudi Arabia.
+            <a class="mail" href="mailto:sanzidikawsar@gmail.com">Contact</a>
+          </li>
+          <li>
+            Mirza Sami, Deka Research & Development.
+            <a class="mail" href="mailto:msami@dekaresearch.com">Contact</a>
+          </li>
+          <li>
+            Mohammad Shorif Uddin.
+            <a class="mail" href="mailto:shorifuddin@gmail.com">Contact</a>
+          </li>
+          <li>
+            Mouhaydine Tlemcani.
+            <a class="mail" href="mailto:tlem@uevora.pt">Contact</a>
+          </li>
+          <li>
+            Nabeel Mahmud, North South University, Bangladesh.
+            <a class="mail" href="mailto:nabeel.mohammed@northsouth.edu"
+              >Contact</a
+            >
+          </li>
+          <li>
+            Naveed Mahmud, Florida Institute of Technology, USA.
+            <a class="mail" href="mailto:nmahmud@fit.edu">Contact</a>
+          </li>
+          <li>
+            Nushrat Jahan Ria, Daffodil International University, Bangladesh.
+            <a class="mail" href="mailto:nushratria.cse@diu.edu.bd">Contact</a>
+          </li>
+          <li>
+            Pratim Saha. <a class="mail" href="mailto:psaha@uab.edu">Contact</a>
+          </li>
+          <li>
+            S. M. Mazharul Hoque Chowdhury Sowrav.
+            <a class="mail" href="mailto:">Contact</a>
+          </li>
+          <li>
+            S. R. Subramanya.
+            <a class="mail" href="mailto:raga72@gmail.com">Contact</a>
+          </li>
+          <li>
+            S.M. Saiful Islam Badhon, University of North Texas, USA.
+            <a class="mail" href="mailto:saifulbadhon.sb2@gmail.com">Contact</a>
+          </li>
+          <li>
+            Saif Islam, Charles Schwab.
+            <a class="mail" href="mailto:asmsaifool.islam@schwab.com"
+              >Contact</a
+            >
+          </li>
+          <li>
+            Sandeep Bodduluri.
+            <a class="mail" href="mailto:sboddulu@uab.edu">Contact</a>
+          </li>
+          <li>
+            Sharun Akter Khushbu, Daffodil International University, Bangladesh.
+            <a class="mail" href="mailto:sharun.cse@diu.edu.bd">Contact</a>
+          </li>
+          <li>
+            Dr. Sheak R. Haider Noori, Daffodil International University,
+            Bangladesh.
+            <a class="mail" href="mailto:drnoori@daffodilvarsity.edu.bd"
+              >Contact</a
+            >
+          </li>
+          <li>
+            Syed Ashiqur Rahman. <a class="mail" href="mailto:">Contact</a>
+          </li>
+          <li>
+            Tanvir Ahmed.
+            <a class="mail" href="mailto:Tanvir.Ahmed@ucf.edu">Contact</a>
+          </li>
+          <li>
+            Tozammel Hossain.
+            <a class="mail" href="mailto:tozammel.hossain@unt.edu">Contact</a>
+          </li>
+          <li>
+            Ukash Nakarmi, University of Arkansas, USA.
+            <a class="mail" href="mailto:unakarmi@uark.edu">Contact</a>
+          </li>
+        </ol>
+      </div>
+
+      <br />
+
+      <h4 style="color: rgb(24, 134, 134)">
+        <strong>Workshop Format:</strong> Full-Day
+      </h4>
+
+      <h2 style="color: rgb(24, 134, 134)">Preliminary Schedule</h2>
+      <ul class="sp">
+        <li style="--accent-color: #41516c">
+          <div class="date">9:00 AM - 10:30 AM</div>
+          <div class="title">Session 1: Introduction and Keynote</div>
+          <div class="descr">
             <td class="abstract">
               <ol>
                 <li>
-                  <strong>Panelists:</strong> Distinguished Researchers and
-                  Industry Experts
+                  <strong> Address and Introduction to the Workshop</strong>
                 </li>
-                <li><strong>Moderator:</strong> Workshop Organizer Experts</li>
                 <li>
-                  <strong>Interactive Discussion and Audience Q&A</strong>
+                  <strong
+                    >Keynote Speaker: Prominent Researcher in the Field</strong
+                  >
                 </li>
-                <li><strong>Closing Remarks and Future Directions</strong></li>
+                <li>
+                  <strong
+                    >Keynote Speaker: Prominent Researcher in the Field</strong
+                  >
+                </li>
               </ol>
             </td>
-          </tr>
-        </div>
-      </li>
-    </ul>
+          </div>
+        </li>
+        <li style="--accent-color: #fbca3e">
+          <div class="date">11 AM - 12 PM</div>
+          <div class="title">Session 2: Research Presentations</div>
+        </li>
+        <li style="--accent-color: #e24a68">
+          <div class="date">12:15 PM - 1:30 PM</div>
+          <div class="title">Session 3: Research Presentations</div>
+        </li>
+        <li style="--accent-color: #1b5f8c">
+          <div class="date">1:45 PM - 3 PM</div>
+          <div class="title">Session 4: Research Presentations</div>
+        </li>
+        <li style="--accent-color: #4cadad">
+          <div class="date">3:15 PM - 4:30 PM</div>
+          <div class="title">Session 5: Research Presentations</div>
+        </li>
+        <li style="--accent-color: #4cadad">
+          <div class="date">4:30 AM - 5:30 PM</div>
+          <div class="title">Session 6: Panel Discussion</div>
+          <div class="descr">
+            <tr>
+              <td class="abstract">
+                <ol>
+                  <li>
+                    <strong>Panelists:</strong> Distinguished Researchers and
+                    Industry Experts
+                  </li>
+                  <li>
+                    <strong>Moderator:</strong> Workshop Organizer Experts
+                  </li>
+                  <li>
+                    <strong>Interactive Discussion and Audience Q&A</strong>
+                  </li>
+                  <li>
+                    <strong>Closing Remarks and Future Directions</strong>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+          </div>
+        </li>
+      </ul>
 
-    <h4 style="color: rgb(24, 134, 134)">
-      <strong>Type of workshop:</strong> In-person
-    </h4>
+      <h4 style="color: rgb(24, 134, 134)">
+        <strong>Type of workshop:</strong> In-person
+      </h4>
 
-    <h3 style="color: rgb(24, 134, 134)">Tentative invited speakers:</h3>
-    <h5>(Names in alphabetical order)</h5>
+      <h3 style="color: rgb(24, 134, 134)">Tentative invited speakers:</h3>
+      <h5>(Names in alphabetical order)</h5>
 
-    <ol class="sp">
-      <li>Dr. Fuad Rahman, CEO, Apurba Technologies, USA</li>
-      <li>Dr. Muntaser Syed, Technical Lead, Open Hackathons Team, NVIDIA</li>
-      <li>
-        Dr. Tozammel Hossain, Asst. Professor, University of North Texas, USA
-      </li>
-    </ol>
+      <ol class="sp">
+        <li>Dr. Fuad Rahman, CEO, Apurba Technologies, USA</li>
+        <li>Dr. Muntaser Syed, Technical Lead, Open Hackathons Team, NVIDIA</li>
+        <li>
+          Dr. Tozammel Hossain, Asst. Professor, University of North Texas, USA
+        </li>
+      </ol>
+    </div>
   </body>
 </html>
