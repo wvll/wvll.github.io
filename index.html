@@ -2,16 +2,28 @@
 <html lang="en">
   <head>
     <base href="." />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
     <meta name="description" content="Conference Template" />
     <meta name="resource-type" content="document" />
     <meta name="distribution" content="global" />
     <meta name="KeyWords" content="Conference" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>WVLL</title>
     <style>
       body {
         font-family: "Times New Roman", serif;
+        
       }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .container {
+          padding: 20px;
+        }
+      }
+
       /* Default style for navigation links */
       .navigation a {
         color: black; /* Default color */
@@ -33,25 +45,25 @@
       }
 
       .banner {
-            position: relative; 
-            /* border: 2px solid #000;  */
-             padding: 8px; 
-             /* top:2px; */
-        }
+        position: relative;
+        /* border: 2px solid #000;  */
+        padding: 8px;
+        /* top:2px; */
+      }
 
-        /* Add CSS for the "top-left" class within the banner */
-        .banner .top-left {
-            position: absolute; /* Set top-left to absolute positioning */
-            top: 8px; /* Adjust top position as needed */
-            left: 8px; /* Adjust left position as needed */
-            right: 10px; /* Adjust left position as needed */
-            /* background-color: #f2f2f2; */
-            padding: 10px; /* Add padding to the top-left content */
-            width: calc(98.5% - 20px); /* Adjust width as needed */
-            height: calc(16% - 20px); /* Adjust height as needed */
-            /* border: 2px solid #000;  */
-            /* padding: 10px; Add some padding to separate the content from the border */ 
-        }
+      /* Add CSS for the "top-left" class within the banner */
+      .banner .top-left {
+        position: absolute; /* Set top-left to absolute positioning */
+        top: 8px; /* Adjust top position as needed */
+        left: 8px; /* Adjust left position as needed */
+        right: 10px; /* Adjust left position as needed */
+        /* background-color: #f2f2f2; */
+        padding: 10px; /* Add padding to the top-left content */
+        width: calc(98.5% - 20px); /* Adjust width as needed */
+        height: calc(16% - 20px); /* Adjust height as needed */
+        /* border: 2px solid #000;  */
+        /* padding: 10px; Add some padding to separate the content from the border */
+      }
     </style>
   </head>
 
@@ -63,7 +75,7 @@
         style="max-width: 100%"
       />
       <div class="top-left">
-        <span class="title2" style="line-height: 1.33;"
+        <span class="title2" style="line-height: 1.33"
           >Workshop on Vision-Based Understanding <br />for Low-Resource
           Languages (WVLL)</span
         >
@@ -88,108 +100,92 @@
           <a title="Conference Program" href="program">Program</a>
         </td>
         <td class="navigation">
-          <a title="Conference Social Impact" href="social_impact">Social Impact</a>
+          <a title="Conference Social Impact" href="social_impact"
+            >Social Impact</a
+          >
         </td>
       </tr>
     </table>
     <br />
 
-    <h2 style="color: rgb(24, 134, 134);">Call for Papers:</h2>
-    <p style="text-align: justify;">
-      The Workshop on Vision-Based Understanding for Low-Resource Languages
-      (WVLL) aims to foster discussions and collaborations among researchers,
-      practitioners, and enthusiasts interested in the challenges and
-      opportunities related to vision-based understanding in the context of
-      low-resource languages. This workshop will explore recent advances and
-      novel approaches in document image processing, optical character
-      recognition, scene text detection, medical document analysis, and other
-      related topics, with a specific focus on languages with limited linguistic
-      resources.
-    </p>
+    <div class="container">
+      <h2 style="color: rgb(24, 134, 134)">Call for Papers:</h2>
+      <p style="text-align: justify">
+        The Workshop on Vision-Based Understanding for Low-Resource Languages
+        (WVLL) aims to foster discussions and collaborations among researchers,
+        practitioners, and enthusiasts interested in the challenges and
+        opportunities related to vision-based understanding in the context of
+        low-resource languages. This workshop will explore recent advances and
+        novel approaches in document image processing, optical character
+        recognition, scene text detection, medical document analysis, and other
+        related topics, with a specific focus on languages with limited
+        linguistic resources.
+      </p>
 
-    <h2 style="color: rgb(24, 134, 134);">Topics of Interest:</h2>
-    <p style="text-align: justify;">
-      We invite original contributions covering a wide range of topics relevant
-      to a vision-based understanding of low-resource languages. Suggested areas
-      of interest include but are not limited to
-    </p>
-    <ul>
-      <li>Document Image Processing</li>
-      <li>Physical And Logical Layout Analysis</li>
-      <li>Optical Character Recognition (OCR)</li>
-      <li>Document Classification</li>
-      <li>Natural Language Processing (NLP) For Document Understanding</li>
-      <li>Scene Text Detection And Recognition</li>
-      <li>Recognition Of Tables And Formulas In Documents</li>
-      <li>Document Summarization And Translation</li>
-      <li>Medical Document Analysis</li>
-      <li>Gold-Standard Benchmarks And Datasets For Low-Resource Languages</li>
-      <li>Video And Speech Analysis For Low-Resource Languages</li>
-      <li>Generative AI For Low-Resource Languages</li>
-    </ul>
+      <h2 style="color: rgb(24, 134, 134)">Topics of Interest:</h2>
+      <p style="text-align: justify">
+        We invite original contributions covering a wide range of topics
+        relevant to a vision-based understanding of low-resource languages.
+        Suggested areas of interest include but are not limited to
+      </p>
+      <ul>
+        <li>Document Image Processing</li>
+        <li>Physical And Logical Layout Analysis</li>
+        <li>Optical Character Recognition (OCR)</li>
+        <li>Document Classification</li>
+        <li>Natural Language Processing (NLP) For Document Understanding</li>
+        <li>Scene Text Detection And Recognition</li>
+        <li>Recognition Of Tables And Formulas In Documents</li>
+        <li>Document Summarization And Translation</li>
+        <li>Medical Document Analysis</li>
+        <li>
+          Gold-Standard Benchmarks And Datasets For Low-Resource Languages
+        </li>
+        <li>Video And Speech Analysis For Low-Resource Languages</li>
+        <li>Generative AI For Low-Resource Languages</li>
+      </ul>
 
-    <h2 style="color: rgb(24, 134, 134);">Submission Guidelines:</h2>
-    <p style="text-align: justify;">
-      We invite researchers to submit their original and unpublished work
-      related to the workshop's theme. Authors can submit either long papers (up
-      to 8 pages) or short papers (up to 4 pages), following the WACV 2023
-      formatting guidelines.
-    </p>
-    <p style="text-align: justify;">
-      All submissions will undergo a rigorous peer-review process by our expert
-      review panel. Accepted papers will be presented during the workshop as
-      oral presentations or posters.
-    </p>
+      <h2 style="color: rgb(24, 134, 134)">Submission Guidelines:</h2>
+      <p style="text-align: justify">
+        We invite researchers to submit their original and unpublished work
+        related to the workshop's theme. Authors can submit either long papers
+        (up to 8 pages) or short papers (up to 4 pages), following the WACV 2023
+        formatting guidelines.
+      </p>
+      <p style="text-align: justify">
+        All submissions will undergo a rigorous peer-review process by our
+        expert review panel. Accepted papers will be presented during the
+        workshop as oral presentations or posters.
+      </p>
 
-    <h2 style="color: rgb(223, 13, 13);">Important Dates:</h2>
-    <ul>
-      <li style="color: rgb(28, 31, 31);"><strong>Paper Submission Deadline:</strong> 10th October, 2023</li>
-      <li style="color: rgb(28, 31, 31);"><strong>Notification of Acceptance:</strong> 9th November, 2023</li>
-      <li style="color: rgb(28, 31, 31);"><strong>Camera-ready Papers Due:</strong> 19th November, 2023</li>
-      <li style="color: rgb(28, 31, 31);"><strong>Workshop Date:</strong> 3 January or 7 January 2024</li>
-    </ul>
-    
+      <h2 style="color: rgb(223, 13, 13)">Important Dates:</h2>
+      <ul>
+        <li style="color: rgb(28, 31, 31)">
+          <strong>Paper Submission Deadline:</strong> 10th October, 2023
+        </li>
+        <li style="color: rgb(28, 31, 31)">
+          <strong>Notification of Acceptance:</strong> 9th November, 2023
+        </li>
+        <li style="color: rgb(28, 31, 31)">
+          <strong>Camera-ready Papers Due:</strong> 19th November, 2023
+        </li>
+        <li style="color: rgb(28, 31, 31)">
+          <strong>Workshop Date:</strong> 3 January or 7 January 2024
+        </li>
+      </ul>
 
-    <h2 style="color: rgb(223, 13, 13);">Submission Link:</h2>
-    <p style="text-align: justify;">
-      Please submit your papers through the WVLL workshop submission system
-      [TBD].
-    </p>
-    <p style="text-align: justify;">
-      Join us at the Workshop on Vision-Based Understanding for Low-Resource
-      Languages, where we will explore innovative solutions to empower languages
-      with limited resources through cutting-edge computer vision technologies.
-      We look forward to receiving your valuable contributions and fostering
-      engaging discussions during the workshop at WACV 2023!
-    </p>
-
-    <!-- <table class="sponsors">
-      <tr>
-        <td class="sponsor">
-          <a href="http://www.eyebleach.me/">
-            <img src="assets/kitten1.jpg" alt="First Sponsor Name" />
-          </a>
-        </td>
-        <td class="sponsor">
-          <a href="http://www.eyebleach.me/">
-            <img
-              src="assets/kitten2.jpg"
-              alt="Second Sponsor Name"
-              style="width: 80%"
-            />
-          </a>
-        </td>
-        <td class="sponsor">
-          <a href="http://www.eyebleach.me/">
-            <img src="assets/kitten3.jpg" alt="Third Sponsor Name" />
-          </a>
-        </td>
-      </tr>
-    </table>
-
-    <footer>
-      &copy; Conference Organizers &nbsp;|&nbsp; Design by
-      <a href="https://github.com/mikepierce">Mike Pierce</a>
-    </footer> -->
+      <h2 style="color: rgb(223, 13, 13)">Submission Link:</h2>
+      <p style="text-align: justify">
+        Please submit your papers through the WVLL workshop submission system
+        [TBD].
+      </p>
+      <p style="text-align: justify">
+        Join us at the Workshop on Vision-Based Understanding for Low-Resource
+        Languages, where we will explore innovative solutions to empower
+        languages with limited resources through cutting-edge computer vision
+        technologies. We look forward to receiving your valuable contributions
+        and fostering engaging discussions during the workshop at WACV 2023!
+      </p>
+    </div>
   </body>
 </html>
