@@ -14,7 +14,6 @@
     <style>
       body {
         font-family: "Times New Roman", serif;
-        
       }
 
       @media only screen and (max-width: 768px) {
@@ -51,6 +50,22 @@
         /* top:2px; */
       }
 
+      .wacv {
+        padding: 5px;
+        /* left: 30px */
+      }
+
+      .cvf {
+        padding: 5px;
+
+        /* left: 200px */
+      }
+      .csl {
+        /* border: 2px solid #000;  */
+        padding: 5px;
+        /* left: 290px */
+      }
+
       /* Add CSS for the "top-left" class within the banner */
       .banner .top-left {
         position: absolute; /* Set top-left to absolute positioning */
@@ -64,6 +79,34 @@
         /* border: 2px solid #000;  */
         /* padding: 10px; Add some padding to separate the content from the border */
       }
+
+      .logos {
+        position: absolute;
+        padding: 8px;
+        left: 20px;
+        top: 115px;
+        background-color: aliceblue;
+        height: 60px;
+        width: 350px;
+      }
+
+      .spn {
+        position: absolute;
+        padding: 8px;
+        left: 20px;
+        top: 495px;
+        background-color: aliceblue;
+        height: 60px;
+        width: 150px;
+      }
+      .spn_img{
+        position: absolute;
+         /* left: 0px; */
+        top: -38px; 
+        width: 150px;
+        height: 150px;
+
+      }
     </style>
   </head>
 
@@ -74,6 +117,42 @@
         alt="Conference Template Banner"
         style="max-width: 100%"
       />
+
+      <div class="logos">
+        <img
+          class="wacv"
+          src="assets\WACV-Logo_2024.png"
+          alt="WACV-Logo_2024"
+          style="width: 150px"
+        />
+
+        <img
+          class="cvf"
+          src="assets\CVF-logo.png"
+          alt="cvf-Logo_2024"
+          style="width: 80px"
+        />
+
+        <img
+          class="csl"
+          src="assets\Computer-Society-Logo.png"
+          alt="cs-Logo_2024"
+          style="width: 80px"
+        />
+
+        
+      </div>
+
+      <div class="spn">
+        <img
+          class="spn_img"
+          src="assets\sp_apurba.png"
+          alt="cvf-Logo_2024"
+
+          
+        />
+      </div>
+
       <div class="top-left">
         <span class="title2" style="line-height: 1.33"
           >Workshop on Vision-Based Understanding <br />for Low-Resource
@@ -176,8 +255,15 @@
 
       <h2 style="color: rgb(223, 13, 13)">Submission Link:</h2>
       <p style="text-align: justify">
-        Please submit your papers through the WVLL workshop submission system
-        [TBD].
+        Please submit your papers through the WVLL workshop submission system:
+        <br>
+        <div style="text-align: center;">
+          <a href="https://cmt3.research.microsoft.com/WVLL2024/" style="display: block; color: red; text-decoration: none;">
+              <img src="assets\sub.png" alt="Image Alt Text" style="max-width: 50px; height: auto;">
+              <br>
+              Submission Link
+          </a>
+      </div>
       </p>
       <p style="text-align: justify">
         Join us at the Workshop on Vision-Based Understanding for Low-Resource
