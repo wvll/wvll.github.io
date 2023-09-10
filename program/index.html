@@ -228,7 +228,7 @@
 
             /* Default style for all links */
             a {
-              color: blue; /* Default link color (blue) */
+              color: rgb(4, 134, 134); /* Default link color (blue) */
               text-decoration: none; /* Remove underline */
             }
 
@@ -277,6 +277,69 @@
             display: none;
           }
       }
+
+      .wacv {
+        padding: 5px;
+        /* left: 30px */
+      }
+
+      .cvf {
+        padding: 5px;
+
+        /* left: 200px */
+      }
+      .csl {
+        /* border: 2px solid #000;  */
+        padding: 5px;
+        /* left: 290px */
+      }
+
+      /* Add CSS for the "top-left" class within the banner */
+      .banner .top-left {
+        position: absolute; /* Set top-left to absolute positioning */
+        top: 8px; /* Adjust top position as needed */
+        left: 8px; /* Adjust left position as needed */
+        right: 10px; /* Adjust left position as needed */
+        /* background-color: #f2f2f2; */
+        padding: 10px; /* Add padding to the top-left content */
+        width: calc(98.5% - 20px); /* Adjust width as needed */
+        height: calc(16% - 20px); /* Adjust height as needed */
+        /* border: 2px solid #000;  */
+        /* padding: 10px; Add some padding to separate the content from the border */
+      }
+
+      .logos {
+        position: absolute;
+        padding: 8px;
+        left: 20px;
+        top: 115px;
+        /* background-color: aliceblue; */
+        height: 60px;
+        width: 350px;
+      }
+
+      .spn {
+        position: absolute;
+        padding: 8px;
+        left: 20px;
+        top: 495px;
+        /* background-color: aliceblue; */
+        height: 60px;
+        width: 150px;
+      }
+      .spn_img{
+        position: absolute;
+         /* left: 0px; */
+        top: 50px; 
+        width: 110px;
+        height: 20px;
+        /* border: 1px solid #000; */
+      }
+      .spn_txt{
+        width: 110px;
+        height: 30px;
+        /* border: 1px solid #000; */
+      }
     </style>
   </head>
 
@@ -287,6 +350,43 @@
         alt="Conference Template Banner"
         style="max-width: 100%"
       />
+
+      <div class="logos">
+        <img
+          class="wacv"
+          src="assets\WACV-Logo_2024.png"
+          alt="WACV-Logo_2024"
+          style="width: 150px"
+        />
+
+        <img
+          class="cvf"
+          src="assets\CVF-logo.png"
+          alt="cvf-Logo_2024"
+          style="width: 80px"
+        />
+
+        <img
+          class="csl"
+          src="assets\Computer-Society-Logo.png"
+          alt="cs-Logo_2024"
+          style="width: 80px"
+        />
+
+        
+      </div>
+
+      <div class="spn">
+        <div class="spn_txt" style="font-size: 25px; color: rgb(216, 231, 231);font-family: 'Times New Roman', Times, serif;text-shadow: -1px -1px 0 rgb(5, 44, 58), 1px -1px 0 rgb(5, 44, 58), -1px 1px 0 rgb(5, 44, 58), 1px 1px 0 rgb(5, 44, 58);"><b>Sponsor:</b></div>
+        <img
+          class="spn_img"
+          src="assets\apurba_bangladesh_logo.png"
+          alt="cvf-Logo_2024"
+
+          
+        />
+      </div>
+
       <div class="top-left">
         <span class="title2" style="line-height: 1.33; color: rgb(24, 134, 134)"
           >Workshop on Vision-Based Understanding <br />for Low-Resource
@@ -334,26 +434,26 @@
        <table class="tabular">
         <tr>
           <th><strong>Reviewers</strong></th>
-          <th><strong>Email</strong></th>
+          <th><strong>LinkedIn</strong></th>
           <th><strong>Organization</strong></th>
         </tr>
         <tr>
           <td>Abdus Sattar</td>
-          <td><a href=""></a></td>
+          <td><a href="https://www.linkedin.com/in/abdus-sattar-0a8a8b1a">Abdus Sattar</a></td>
           <td>Daffodil International University, Bangladesh</td>
         </tr>
         <tr>
           <td>Abu Kaisar Mohammad Masum</td>
           <td>
-            <a href="amasum2022@my.fit.edu">amasum2022@my.fit.edu</a>
+            <a href="https://www.linkedin.com/in/abukaisar24/ ">Abu Kaisar</a>
           </td>
           <td>Florida Institute of Technology,USA</td>
         </tr>
         <tr>
           <td>Angelina Geetha</td>
           <td>
-            <a href="angelinag@hindustanuniv.ac.in"
-              >angelinag@hindustanuniv.ac.in</a
+            <a href="https://www.linkedin.com/in/angelina-geetha-397361159/"
+              >Angelina Geetha</a
             >
           </td>
           <td>Hindustan Institute of Technology and Science,India</td>
@@ -361,57 +461,78 @@
         <tr>
           <td>Ghalib Hussaiyn</td>
           <td>
-            <a href="ghalib@conneqted.io">ghalib@conneqted.io</a>
+            <a href="https://www.linkedin.com/in/mdghalib/ ">Ghalib</a>
           </td>
           <td>PayPal</td>
         </tr>
         <tr>
           <td>Hasmot Ali</td>
           <td>
-            <a href="hasmot23@gmail.com">hasmot23@gmail.com</a>
+            <a href=https://www.linkedin.com/in/hasmot-ali-hasu-29327b152 >Hasmot Ali Hasu</a>
           </td>
           <td>Apurba Technologies Ltd</td>
         </tr>
         <tr>
           <td>Md. Fahad Hossain</td>
           <td>
-            <a href=""></a>
+            <a href="https://www.linkedin.com/in/md-fahad-hossain-768708155/">Md. Fahad Hossain</a>
           </td>
           <td>Daffodil International University, Bangladesh</td>
         </tr>
         <tr>
+          <td>Mahmudul Hasan</td>
+          <td>
+            <a href="https://www.linkedin.com/in/mhasanraju/">Mahmudul Hasan</a>
+          </td>
+          <td>Comilla University, Bangladesh</td>
+        </tr>
+        <tr>
+          <td>Mohammad Mamun Or Rashid</td>
+          <td>
+            <a href="https://www.linkedin.com/in/mohammad-mamun-or-rashid-57207541">Mohammad Mamun Or Rashid</a>
+          </td>
+          <td>Jahangirnagar University, Bangladesh</td>
+        </tr>
+        <tr>
+          <td>Md Majedul Islam</td>
+          <td>
+            <a href="https://www.linkedin.com/in/majedrifat ">Md Majedul Islam</a>
+          </td>
+          <td>Kennesaw State University, USA</td>
+        </tr>
+        <tr>
           <td>Md. Sanzidul Islam</td>
           <td>
-            <a href="sanzidikawsar@gmail.com">sanzidikawsar@gmail.com </a>
+            <a href="https://www.linkedin.com/in/sanzidikawsar/">Md. Sanzidul Islam</a>
           </td>
           <td>King Abdulaziz University, Saudi Arabia</td>
         </tr>
         <tr>
           <td>Mirza Sami</td>
           <td>
-            <a href="msami@dekaresearch.com">msami@dekaresearch.com</a>
+            <a href="https://www.linkedin.com/in/mirza-tanzim-sami/">Mirza Sami</a>
           </td>
           <td>Deka Research & Development</td>
         </tr>
         <tr>
           <td>Mohammad Shorif Uddin</td>
           <td>
-            <a href="shorifuddin@gmail.com">shorifuddin@gmail.com</a>
+            <a href="https://www.linkedin.com/in/mohammad-shorif-uddin/">Mohammad Shorif Uddin</a>
           </td>
-          <td></td>
+          <td>Jahangirnagar University, Bangladesh</td>
         </tr>
         <tr>
           <td>Mouhaydine Tlemcani</td>
           <td>
-            <a href="tlem@uevora.pt">tlem@uevora.pt</a>
+            <a href="https://www.linkedin.com/in/mouhaydine-tlemcani-01565317/">Mouhaydine Tlemcani</a>
           </td>
-          <td></td>
+          <td>Universidade de Évora, Portugal</td>
         </tr>
         <tr>
           <td>Nabeel Mahmud</td>
           <td>
-            <a href="nabeel.mohammed@northsouth.edu"
-              >nabeel.mohammed@northsouth.edu</a
+            <a href="https://www.linkedin.com/in/nabeelmohammed"
+              >Nabeel Mohammed</a
             >
           </td>
           <td>North South University, Bangladesh</td>
@@ -419,30 +540,23 @@
         <tr>
           <td>Naveed Mahmud</td>
           <td>
-            <a href="nmahmud@fit.edu">nmahmud@fit.edu</a>
+            <a href="https://www.linkedin.com/in/naveed-mahmud">Naveed Mahmud</a>
           </td>
           <td>Florida Institute of Technology, USA</td>
         </tr>
         <tr>
           <td>Nushrat Jahan Ria</td>
           <td>
-            <a href="nushratria.cse@diu.edu.bd">nushratria.cse@diu.edu.bd</a>
+            <a href="https://www.linkedin.com/in/nushrat-jahan-ria/">Nushrat Jahan Ria</a>
           </td>
           <td>Daffodil International University, Bangladesh</td>
         </tr>
         <tr>
           <td>Pratim Saha</td>
           <td>
-            <a href="psaha@uab.edu">psaha@uab.edu</a>
+            <a href="https://www.linkedin.com/in/pratim-saha/ ">Pratim Saha</a>
           </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>S. M. Mazharul Hoque Chowdhury Sowrav</td>
-          <td>
-            <a href=""> </a>
-          </td>
-          <td></td>
+          <td>University of Alabama at Birmingham, USA</td>
         </tr>
         <tr>
           <td>S. R. Subramanya</td>
@@ -454,15 +568,15 @@
         <tr>
           <td>S.M. Saiful Islam Badhon</td>
           <td>
-            <a href="saifulbadhon.sb2@gmail.com">saifulbadhon.sb2@gmail.com </a>
+            <a href="https://www.linkedin.com/in/s-m-saiful-islam-badhon-396542139/">S.M. Saiful Islam Badhon </a>
           </td>
           <td>University of North Texas, USA</td>
         </tr>
         <tr>
           <td>Saif Islam</td>
           <td>
-            <a href="asmsaifool.islam@schwab.com"
-              >asmsaifool.islam@schwab.com
+            <a href="https://www.linkedin.com/in/saif-islam10/ "
+              >Saif I.
             </a>
           </td>
           <td>Charles Schwab</td>
@@ -470,22 +584,22 @@
         <tr>
           <td>Sandeep Bodduluri</td>
           <td>
-            <a href="sboddulu@uab.edu">sboddulu@uab.edu </a>
+            <a href="https://www.linkedin.com/in/sandeepboddu ">Sandeep Bodduluri</a>
           </td>
-          <td></td>
+          <td>University of Alabama at Birmingham, USA</td>
         </tr>
         <tr>
           <td>Sharun Akter Khushbu</td>
           <td>
-            <a href="sharun.cse@diu.edu.bd ">sharun.cse@diu.edu.bd </a>
+            <a href="https://www.linkedin.com/in/sharun-akter-khushbu-63b104173/">Sharun Akter khushbu</a>
           </td>
           <td>Daffodil International University, Bangladesh</td>
         </tr>
         <tr>
           <td>Dr. Sheak R. Haider Noori</td>
           <td>
-            <a href="mailto:drnoori@daffodilvarsity.edu.bd"
-              >drnoori@daffodilvarsity.edu.bd
+            <a href="https://www.linkedin.com/in/srhnoori/ "
+              >Sheak Rashed Haider Noori
             </a>
           </td>
           <td>Daffodil International University, Bangladesh</td>
@@ -493,41 +607,48 @@
         <tr>
           <td>Syed Ashiqur Rahman</td>
           <td>
-            <a href=""> </a>
+            <a href="https://www.linkedin.com/in/syedashiqur-rahman/ ">Syed Ashiqur Rahman</a>
           </td>
-          <td></td>
+          <td>GSK, USA</td>
         </tr>
         <tr>
           <td>Tanvir Ahmed</td>
           <td>
-            <a href="Tanvir.Ahmed@ucf.edu">Tanvir.Ahmed@ucf.edu </a>
+            <a href="https://www.cs.ucf.edu/person/tanvir-ahmed/">Tanvir Ahmed</a>
           </td>
-          <td></td>
+          <td>University of Central Florida, USA</td>
         </tr>
         <tr>
           <td>Tozammel Hossain</td>
           <td>
-            <a href="tozammel.hossain@unt.edu">tozammel.hossain@unt.edu </a>
+            <a href="https://www.linkedin.com/in/tozammel/">Tozammel Hossain</a>
           </td>
-          <td></td>
+          <td>University of North Texas, USA</td>
         </tr>
         <tr>
           <td>Ukash Nakarmi</td>
           <td>
-            <a href="unakarmi@uark.edu">unakarmi@uark.edu </a>
+            <a href="https://www.linkedin.com/in/ukashnakarmi">Ukash Nakarmi</a>
           </td>
           <td>University of Arkansas, USA</td>
         </tr>
+        <tr>
+          <td>S. M. Mazharul Hoque Chowdhury</td>
+          <td>
+            <a href="https://www.linkedin.com/in/s-m-mazharul-hoque-chowdhury-989026112/ ">S M Mazharul Hoque Chowdhury</a>
+          </td>
+          <td>University of North Texas, USA</td>
+        </tr>
       </table> 
 
-      <div class="listview">
+      <!-- <div class="listview">
         <ol >
-          <li>Abdus Sattar, Daffodil International University, Bangladesh</li>
+          <li><td><a href="https://www.linkedin.com/in/abdus-sattar-0a8a8b1a">Abdus Sattar</a></td>, Daffodil International University, Bangladesh</li>
           <li>
             Abu Kaisar Mohammad Masum, Florida Institute of Technology,USA.<a
               class="mail"
               href="mailto:amasum2022@my.fit.edu"
-              >Contact</a
+              > <img src="assets\email-and-mail-icon-black-free.png" alt="Email" style="width: 20px; height: 25px;"></a
             >
           </li>
           <li>
@@ -631,8 +752,44 @@
             <a class="mail" href="mailto:unakarmi@uark.edu">Contact</a>
           </li>
         </ol>
-      </div>
+      </div> -->
 
+       <div class="listview">
+        <ol>
+          
+            <li><a href="https://www.linkedin.com/in/abdus-sattar-0a8a8b1a">Abdus Sattar</a>, Daffodil International University, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/abu-kaisar-mohammad-masum-79864982">Abu Kaisar Mohammad Masum</a>, Florida Institute of Technology, USA</li>
+            <li><a href="https://www.linkedin.com/in/angelina-geetha-2366b650">Angelina Geetha</a>, Hindustan Institute of Technology and Science, India</li>
+            <li><a href="https://www.linkedin.com/in/ghalibhussaiyn">Ghalib Hussaiyn</a>, PayPal</li>
+            <li><a href="https://www.linkedin.com/in/hasmot-ali-hasu-0b387a88">Hasmot Ali Hasu</a>, Apurba Technologies Ltd</li>
+            <li><a href="https://www.linkedin.com/in/md-fahad-hossain-b8a86a57">Md. Fahad Hossain</a>, Daffodil International University, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/mahmudul-hasan-3b8765104">Mahmudul Hasan</a>, Comilla University, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/mohammad-mamun-or-rashid-067b41133">Mohammad Mamun Or Rashid</a>, Jahangirnagar University, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/md-majedul-islam-62933549">Md Majedul Islam</a>, Kennesaw State University, USA</li>
+            <li><a href="https://www.linkedin.com/in/md-sanzidul-islam-16651248">Md. Sanzidul Islam</a>, King Abdulaziz University, Saudi Arabia</li>
+            <li><a href="https://www.linkedin.com/in/mirza-sami-6b501012">Mirza Sami</a>, Deka Research & Development</li>
+            <li><a href="https://www.linkedin.com/in/mohammad-shorif-uddin-55526887">Mohammad Shorif Uddin</a>, Jahangirnagar University, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/mouhaydine-tlemcani-43a82333">Mouhaydine Tlemcani</a>, Universidade de Évora, Portugal</li>
+            <li><a href="https://www.linkedin.com/in/nabeel-mahmud-8847b99">Nabeel Mahmud</a>, North South University, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/naveed-mahmud">Naveed Mahmud</a>, Florida Institute of Technology, USA</li>
+            <li><a href="https://www.linkedin.com/in/nushrat-jahan-ria-65a510136">Nushrat Jahan Ria</a>, Daffodil International University, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/pratimsaha">Pratim Saha</a>, University of Alabama at Birmingham, USA</li>
+            <li><a href="https://www.linkedin.com/in/s-r-subramanya-26b848a4">S. R. Subramanya</a></li>
+            <li><a href="https://www.linkedin.com/in/saiful-badhon">S.M. Saiful Islam Badhon</a>, University of North Texas, USA</li>
+            <li><a href="https://www.linkedin.com/in/saif-islam-7b998ba">Saif Islam</a>, Charles Schwab</li>
+            <li><a href="https://www.linkedin.com/in/sandeep-bodduluri-439a87134">Sandeep Bodduluri</a>, University of Alabama at Birmingham, USA</li>
+            <li><a href="https://www.linkedin.com/in/sharun-akter-khushbu-27456a10b">Sharun Akter Khushbu</a>, Daffodil International University, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/dr-sheak-r-haider-noori-513074b4">Dr. Sheak R. Haider Noori</a>, Daffodil International University, Bangladesh</li>
+            <li><a href="https://www.linkedin.com/in/syedashiqurrahman">Syed Ashiqur Rahman</a>, GSK, USA</li>
+            <li><a href="https://www.linkedin.com/in/tanvir-ahmed-782aaa2a">Tanvir Ahmed</a>, University of Central Florida, USA</li>
+            <li><a href="https://www.linkedin.com/in/tozammel-hossain-phd-098b7424">Tozammel Hossain</a>, University of North Texas, USA</li>
+            <li><a href="https://www.linkedin.com/in/ukash-nakarmi-26245382">Ukash Nakarmi</a>, University of Arkansas, USA</li>
+            <li><a href="https://www.linkedin.com/in/s-m-mazharul-hoque-chowdhury-1ba18a7a">S. M. Mazharul Hoque Chowdhury</a>, University of North Texas, USA</li>
+     
+          
+        </ol>
+        </div>
+    
       <br />
 
       <h4 style="color: rgb(24, 134, 134)">
