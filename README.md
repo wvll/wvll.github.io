@@ -27,6 +27,11 @@ Opening `index.html` directly in a browser also works, but a server is recommend
 ## Deployment
 Designed for GitHub Pages (or any static host). No build artifacts; publish the repository root.
 
+### Crawling & SEO
+- `robots.txt` allows crawling and points to `https://wvll.github.io/sitemap.xml`.
+- `sitemap.xml` lists all primary 2026 pages plus the archived 2024 pages.
+- Meta descriptions and OG/Twitter tags are present; add a canonical link tag per page if desired.
+
 ## Maintenance Checklist
 - Update dates, venue, and links if the conference details change.
 - Add/remove speaker and committee entries in the relevant sections.
