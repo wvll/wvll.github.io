@@ -1,463 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <base href="." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="resource-type" content="document" />
-    <meta name="distribution" content="global" />
-    
-    <meta name="description" content="2026 International Conference on Vision, Language & Learning (WVLL 2026) - a two-day conference on cutting-edge vision-language research and applications." />
-    <meta name="keywords" content="Vision Language Models, Multimodal AI, Large Language Models, Document Image Processing, Scene Text Recognition, Speech and Video Understanding, Low-Resource Languages, Evaluation Benchmarks, Edge AI, Inclusive AI, Conference, WVLL 2026" />
-    <meta name="author" content="WVLL 2026 Organizing Committee" />
-    <meta name="robots" content="index, follow" />
-    <meta name="geo.region" content="US-TX" />
-    <meta name="geo.placename" content="Denton" />
-    <meta name="geo.position" content="33.2148;-97.1331" />
-    <meta name="ICBM" content="33.2148, -97.1331" />
-    <meta property="og:title" content="2026 International Conference on Vision, Language & Learning (WVLL)" />
-    <meta property="og:description" content="Join WVLL 2026 in Denton, Texas for two days of vision-language research and community building." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://wvll.github.io" />
-    <meta property="og:image" content="https://wvll.github.io/assets/conference-image.jpg" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="article:author" content="WVLL 2026 Organizing Committee" />
-    <meta property="article:publisher" content="WVLL 2026 Organizing Committee" />
-    <meta property="article:published_time" content="2026-01-03" />
-    <meta property="article:modified_time" content="2026-01-07" />
-    <meta property="og:site_name" content="WVLL 2026 Conference" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="2026 International Conference on Vision, Language & Learning (WVLL)" />
-    <meta name="twitter:description" content="Join WVLL 2026 in Denton, Texas for two days of vision-language research and community building." />
-    <meta name="twitter:image" content="https://wvll.github.io/assets/conference-image.jpg" />
-    
-    <title>WVLL 2026 - International Conference on Vision, Language & Learning</title>
-    <style>
-      :root {
-        --bg-color: #f4f7f9; /* Light grayish blue */
-        --primary-text-color: #333740; /* Dark gray for text */
-        --secondary-text-color: #5a6270;
-        --heading-color: #2c3e50; /* Darker blue/charcoal for headings */
-        --accent-color: #2a9d8f; /* Teal accent */
-        --accent-hover-color: #21867a; /* Darker teal for hover */
-        --border-color: #dde4e9;
-        --card-bg-color: #ffffff;
-        --nav-bg-color: #2c3e50; /* Dark background for nav */
-        --nav-link-color: #ecf0f1;
-        --nav-link-hover-bg: var(--accent-color);
-        --banner-text-color: #ffffff; /* Explicit white for banner text */
 
-        /* Variables for hamburger menu (adapted from original) */
-        --ham-label-bg: transparent; /* Make hamburger label bg transparent */
-        --ham-border: var(--accent-color);
-        --ham-line-color: var(--accent-color);
-        --ham-menu-bg: var(--card-bg-color);
-        --ham-link-color: var(--primary-text-color);
-        --ham-link-current-color: var(--accent-color);
-        --ham-menu-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-      }
+<head>
+  <base href="." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="resource-type" content="document" />
+  <meta name="distribution" content="global" />
 
-      /* Global Resets & Base Styles */
-      *,
-      *::before,
-      *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+  <meta name="description"
+    content="2026 International Conference on Vision, Language & Learning (WVLL 2026) - a two-day conference on cutting-edge vision-language research and applications." />
+  <meta name="keywords"
+    content="Vision Language Models, Multimodal AI, Large Language Models, Document Image Processing, Scene Text Recognition, Speech and Video Understanding, Low-Resource Languages, Evaluation Benchmarks, Edge AI, Inclusive AI, Conference, WVLL 2026" />
+  <meta name="author" content="WVLL 2026 Organizing Committee" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="US-TX" />
+  <meta name="geo.placename" content="Denton" />
+  <meta name="geo.position" content="33.2148;-97.1331" />
+  <meta name="ICBM" content="33.2148, -97.1331" />
+  <meta property="og:title" content="2026 International Conference on Vision, Language & Learning (WVLL)" />
+  <meta property="og:description"
+    content="Join WVLL 2026 in Denton, Texas for two days of vision-language research and community building." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wvll.github.io" />
+  <meta property="og:image" content="https://wvll.github.io/assets/conference-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="article:author" content="WVLL 2026 Organizing Committee" />
+  <meta property="article:publisher" content="WVLL 2026 Organizing Committee" />
+  <meta property="article:published_time" content="2026-01-03" />
+  <meta property="article:modified_time" content="2026-01-07" />
+  <meta property="og:site_name" content="WVLL 2026 Conference" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="2026 International Conference on Vision, Language & Learning (WVLL)" />
+  <meta name="twitter:description"
+    content="Join WVLL 2026 in Denton, Texas for two days of vision-language research and community building." />
+  <meta name="twitter:image" content="https://wvll.github.io/assets/conference-image.jpg" />
 
-      html {
-        scroll-behavior: smooth;
-      }
+  <title>WVLL 2026 - International Conference on Vision, Language & Learning</title>
+  <style>
+    :root {
+      --bg-color: #f4f7f9;
+      /* Light grayish blue */
+      --primary-text-color: #333740;
+      /* Dark gray for text */
+      --secondary-text-color: #5a6270;
+      --heading-color: #2c3e50;
+      /* Darker blue/charcoal for headings */
+      --accent-color: #2a9d8f;
+      /* Teal accent */
+      --accent-hover-color: #21867a;
+      /* Darker teal for hover */
+      --border-color: #dde4e9;
+      --card-bg-color: #ffffff;
+      --nav-bg-color: #2c3e50;
+      /* Dark background for nav */
+      --nav-link-color: #ecf0f1;
+      --nav-link-hover-bg: var(--accent-color);
+      --banner-text-color: #ffffff;
+      /* Explicit white for banner text */
 
+      /* Variables for hamburger menu (adapted from original) */
+      --ham-label-bg: transparent;
+      /* Make hamburger label bg transparent */
+      --ham-border: var(--accent-color);
+      --ham-line-color: var(--accent-color);
+      --ham-menu-bg: var(--card-bg-color);
+      --ham-link-color: var(--primary-text-color);
+      --ham-link-current-color: var(--accent-color);
+      --ham-menu-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Global Resets & Base Styles */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      /* Consider: font-family: 'Inter', sans-serif; if using Google Fonts */
+      line-height: 1.7;
+      color: var(--primary-text-color);
+      background-color: var(--bg-color);
+      font-size: 16px;
+    }
+
+    /* Typography */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--heading-color);
+      margin-top: 1.8em;
+      margin-bottom: 0.8em;
+      line-height: 1.3;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      /* 35.2px */
+      padding-bottom: 0.4em;
+      border-bottom: 3px solid var(--accent-color);
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      /* 25.6px */
+      color: var(--accent-color);
+      margin-top: 2em;
+    }
+
+    p {
+      margin-bottom: 1.2em;
+      color: var(--secondary-text-color);
+      text-align: justify;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--accent-hover-color);
+      text-decoration: underline;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 1em;
+      padding-left: 20px;
+      /* Default padding for lists */
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: var(--card-bg-color);
+      box-shadow: 0 6px 18px rgba(44, 62, 80, 0.08);
+      border-radius: 10px;
+    }
+
+    /* Banner */
+    .banner {
+      background: linear-gradient(135deg, var(--heading-color) 0%, var(--accent-color) 100%);
+      color: var(--banner-text-color);
+      /* Use the CSS variable for banner text */
+      padding: 50px 20px;
+      text-align: center;
+      border-bottom: 5px solid var(--accent-hover-color);
+    }
+
+    .banner-title {
+      font-size: 2.8rem;
+      /* 44.8px */
+      font-weight: 700;
+      margin-bottom: 0.3em;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      color: var(--banner-text-color);
+      /* Ensure title is white */
+    }
+
+    .banner-date {
+      font-size: 1.3rem;
+      /* 20.8px */
+      opacity: 0.9;
+      color: var(--banner-text-color);
+      /* Ensure date is white */
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .logos {
+      /* Example styling for logos if they exist */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      margin-top: 25px;
+    }
+
+    .logos img {
+      /* Assuming you'll add img tags here */
+      max-height: 45px;
+      filter: brightness(0) invert(1) opacity(0.8);
+      /* Make them white and slightly transparent */
+      transition: opacity 0.3s ease;
+    }
+
+    .logos img:hover {
+      opacity: 1;
+    }
+
+    .spn {
+      /* For "Sponsors" text or small logos */
+      margin-top: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    .spn_txt {
+      /* Style as needed */
+    }
+
+    .spn_img {
+      /* Style as needed */
+    }
+
+
+    /* Desktop Navigation */
+    .desktop-navigation {
+      background-color: var(--nav-bg-color);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .desktop-navigation ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .desktop-navigation ul li {
+      margin: 0 10px;
+    }
+
+    .desktop-navigation ul li a {
+      color: var(--nav-link-color);
+      font-weight: 500;
+      /* Medium weight for nav links */
+      padding: 10px 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-size: 1.05rem;
+      /* 16.8px */
+    }
+
+    .desktop-navigation ul li a:hover,
+    .desktop-navigation ul li a.current {
+      background-color: var(--nav-link-hover-bg);
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Key Areas Styling */
+    .key-areas-list {
+      column-count: 2;
+      column-gap: 40px;
+      padding-left: 0;
+      /* Remove default ul padding if using custom list style */
+    }
+
+    .key-areas-list ul {
+      list-style-type: none;
+      /* Remove default bullets */
+      padding-left: 0;
+    }
+
+    .key-areas-list li {
+      position: relative;
+      padding-left: 25px;
+      /* Space for custom bullet */
+      margin-bottom: 10px;
+      /* Space between items */
+    }
+
+    .key-areas-list li::before {
+      content: '✔';
+      /* Custom bullet */
+      position: absolute;
+      left: 0;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+
+    /* Committee Table */
+    .committee-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 25px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+      border-radius: 8px;
+      overflow: hidden;
+      /* Ensures border-radius clips content */
+    }
+
+    .committee-table th,
+    .committee-table td {
+      border: 1px solid var(--border-color);
+      padding: 14px 18px;
+      text-align: left;
+    }
+
+    .committee-table th {
+      background-color: var(--heading-color);
+      color: white;
+      font-weight: 600;
+      /* Bolder */
+      font-size: 1.05rem;
+    }
+
+    .committee-table td {
+      color: var(--secondary-text-color);
+    }
+
+    .committee-table tbody tr:nth-child(even) {
+      background-color: #fbfcfd;
+      /* Very light alternate row color */
+    }
+
+    .committee-table tbody tr:hover {
+      background-color: #f0f4f7;
+      /* Hover effect for rows */
+    }
+
+
+    /* Hamburger Menu (Adapted from original) */
+    #ham-menu {
+      display: none;
+    }
+
+    label[for="ham-menu"] {
+      /* Hamburger Icon Label */
+      display: none;
+      /* Hidden by default, shown on mobile */
+      position: fixed;
+      /* Fixed position for mobile */
+      top: 20px;
+      left: 20px;
+      z-index: 1002;
+      /* Above content, below menu overlay */
+      width: 50px;
+      height: 50px;
+      background-color: var(--ham-label-bg);
+      border-radius: 8px;
+      border: 2px solid var(--ham-border);
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    label[for="ham-menu"]:hover {
+      background-color: rgba(42, 157, 143, 0.1);
+      /* Light accent on hover */
+    }
+
+    .ham-menu {
+      /* The menu itself */
+      width: 80vw;
+      /* Smaller width */
+      max-width: 300px;
+      /* Max width */
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      /* Start off-screen */
+      visibility: hidden;
+      transform: translateX(-100%);
+      z-index: 1001;
+      /* Below icon, above page content but below overlay */
+      background-color: var(--ham-menu-bg);
+      transition: transform 0.5s ease, visibility 0.5s;
+      display: flex;
+      flex-direction: column;
+      /* Align items vertically */
+      padding-top: 80px;
+      /* Space for close button or header */
+      box-shadow: var(--ham-menu-shadow);
+    }
+
+    .ham-menu>ul {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .ham-menu a {
+      display: block;
+      padding: 15px 20px;
+      font-size: 1.3rem;
+      /* 20.8px */
+      color: var(--ham-link-color);
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    .ham-menu a:hover {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+    .ham-menu a.current {
+      color: var(--ham-link-current-color);
+      font-weight: bold;
+      background-color: rgba(42, 157, 143, 0.1);
+    }
+
+    .ham-menu>ul>li {
+      list-style-type: none;
+    }
+
+    #ham-menu:checked~.ham-menu {
+      transform: translateX(0);
+      visibility: visible;
+    }
+
+    .full-page-green {
+      /* Overlay */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent black */
+      z-index: 1000;
+      /* Below menu icon and menu, above content */
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0.5s;
+    }
+
+    #ham-menu:checked~.full-page-green {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Hamburger Icon Lines */
+    [for="ham-menu"]>div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      /* Changed from column wrap to column */
+      justify-content: center;
+      /* Vertically center lines */
+      align-items: center;
+      /* Horizontally center lines */
+    }
+
+    .menu-line {
+      display: block;
+      width: 22px;
+      /* Slightly wider lines */
+      height: 3px;
+      /* Thicker lines */
+      margin: 3px 0;
+      /* Adjust spacing */
+      background-color: var(--ham-line-color);
+      border-radius: 3px;
+      transition: transform 0.4s ease, opacity 0.3s ease;
+    }
+
+    /* Animation for X */
+    #ham-menu:checked+label .menu-line:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    #ham-menu:checked+label .menu-line:nth-child(2) {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    #ham-menu:checked+label .menu-line:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* Original complex line structure was simplified above to 3 lines */
+    /* Removing styles for .menu-line:nth-child(4,5,6) as they are not needed for a standard 3-line hamburger */
+
+
+    /* Responsive Adjustments */
+    @media only screen and (max-width: 768px) {
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        /* Consider: font-family: 'Inter', sans-serif; if using Google Fonts */
-        line-height: 1.7;
-        color: var(--primary-text-color);
-        background-color: var(--bg-color);
-        font-size: 16px;
+        font-size: 15px;
       }
 
-      /* Typography */
-      h1, h2, h3, h4, h5, h6 {
-        color: var(--heading-color);
-        margin-top: 1.8em;
-        margin-bottom: 0.8em;
-        line-height: 1.3;
-      }
-
-      h2 {
-        font-size: 2.2rem; /* 35.2px */
-        padding-bottom: 0.4em;
-        border-bottom: 3px solid var(--accent-color);
-      }
-
-      h3 {
-        font-size: 1.6rem; /* 25.6px */
-        color: var(--accent-color);
-        margin-top: 2em;
-      }
-      
-      p {
-        margin-bottom: 1.2em;
-        color: var(--secondary-text-color);
-        text-align: justify;
-      }
-
-      a {
-        color: var(--accent-color);
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      a:hover {
-        color: var(--accent-hover-color);
-        text-decoration: underline;
-      }
-
-      ul, ol {
-        margin-bottom: 1em;
-        padding-left: 20px; /* Default padding for lists */
-      }
-      
-      li {
-        margin-bottom: 0.5em;
-      }
-
-      /* Layout */
       .container {
-        max-width: 1100px;
-        margin: 30px auto;
-        padding: 30px;
-        background-color: var(--card-bg-color);
-        box-shadow: 0 6px 18px rgba(44, 62, 80, 0.08);
-        border-radius: 10px;
+        padding: 20px;
+        margin: 20px 15px;
+        /* Add side margin on mobile */
+        border-radius: 8px;
       }
 
-      /* Banner */
-      .banner {
-        background: linear-gradient(135deg, var(--heading-color) 0%, var(--accent-color) 100%);
-        color: var(--banner-text-color); /* Use the CSS variable for banner text */
-        padding: 50px 20px;
-        text-align: center;
-        border-bottom: 5px solid var(--accent-hover-color);
+      .desktop-navigation {
+        display: none;
+        /* Hide desktop nav */
+      }
+
+      label[for="ham-menu"] {
+        /* Hamburger Icon */
+        display: flex;
+        /* Show on mobile, flex for centering lines */
       }
 
       .banner-title {
-        font-size: 2.8rem; /* 44.8px */
-        font-weight: 700;
-        margin-bottom: 0.3em;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-        color: var(--banner-text-color); /* Ensure title is white */
+        font-size: 2rem;
+        /* Adjust banner title */
       }
 
       .banner-date {
-        font-size: 1.3rem; /* 20.8px */
-        opacity: 0.9;
-        color: var(--banner-text-color); /* Ensure date is white */
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-      }
-      
-      .logos { /* Example styling for logos if they exist */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        margin-top: 25px;
-      }
-      .logos img { /* Assuming you'll add img tags here */
-        max-height: 45px;
-        filter: brightness(0) invert(1) opacity(0.8); /* Make them white and slightly transparent */
-        transition: opacity 0.3s ease;
-      }
-      .logos img:hover {
-        opacity: 1;
-      }
-      .spn { /* For "Sponsors" text or small logos */
-          margin-top: 20px;
-          font-size: 0.9rem;
-          opacity: 0.7;
-      }
-      .spn_txt{
-        /* Style as needed */
-      }
-      .spn_img {
-         /* Style as needed */
+        font-size: 1rem;
       }
 
-
-      /* Desktop Navigation */
-      .desktop-navigation {
-        background-color: var(--nav-bg-color);
-        padding: 15px 0;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      }
-      .desktop-navigation ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .desktop-navigation ul li {
-        margin: 0 10px;
-      }
-      .desktop-navigation ul li a {
-        color: var(--nav-link-color);
-        font-weight: 500; /* Medium weight for nav links */
-        padding: 10px 18px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        font-size: 1.05rem; /* 16.8px */
-      }
-      .desktop-navigation ul li a:hover,
-      .desktop-navigation ul li a.current {
-        background-color: var(--nav-link-hover-bg);
-        color: white;
-        text-decoration: none;
+      h2 {
+        font-size: 1.8rem;
       }
 
-      /* Key Areas Styling */
+      h3 {
+        font-size: 1.4rem;
+      }
+
       .key-areas-list {
-        column-count: 2;
-        column-gap: 40px;
-        padding-left: 0; /* Remove default ul padding if using custom list style */
-      }
-      .key-areas-list ul {
-        list-style-type: none; /* Remove default bullets */
-        padding-left: 0;
-      }
-      .key-areas-list li {
-        position: relative;
-        padding-left: 25px; /* Space for custom bullet */
-        margin-bottom: 10px; /* Space between items */
-      }
-      .key-areas-list li::before {
-        content: '✔'; /* Custom bullet */
-        position: absolute;
-        left: 0;
-        color: var(--accent-color);
-        font-weight: bold;
+        column-count: 1;
+        /* Single column on mobile */
       }
 
-
-      /* Committee Table */
-      .committee-table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-top: 25px;
-          box-shadow: 0 3px 10px rgba(0,0,0,0.07);
-          border-radius: 8px;
-          overflow: hidden; /* Ensures border-radius clips content */
-      }
-      .committee-table th, .committee-table td {
-          border: 1px solid var(--border-color);
-          padding: 14px 18px;
-          text-align: left;
-      }
-      .committee-table th {
-          background-color: var(--heading-color);
-          color: white;
-          font-weight: 600; /* Bolder */
-          font-size: 1.05rem;
-      }
-      .committee-table td {
-        color: var(--secondary-text-color);
-      }
-      .committee-table tbody tr:nth-child(even) {
-          background-color: #fbfcfd; /* Very light alternate row color */
-      }
-      .committee-table tbody tr:hover {
-          background-color: #f0f4f7; /* Hover effect for rows */
-      }
-
-
-      /* Hamburger Menu (Adapted from original) */
-      #ham-menu {
-        display: none;
-      }
-      label[for="ham-menu"] { /* Hamburger Icon Label */
-        display: none; /* Hidden by default, shown on mobile */
-        position: fixed; /* Fixed position for mobile */
+      /* Adjust hamburger icon position if banner is present */
+      label[for="ham-menu"].with-banner-margin {
         top: 20px;
-        left: 20px;
-        z-index: 1002; /* Above content, below menu overlay */
-        width: 50px;
-        height: 50px;
-        background-color: var(--ham-label-bg);
-        border-radius: 8px;
-        border: 2px solid var(--ham-border);
-        cursor: pointer;
-        transition: background-color 0.3s;
+        /* Adjust as needed if sticky nav or banner takes space */
       }
-      label[for="ham-menu"]:hover {
-        background-color: rgba(42, 157, 143, 0.1); /* Light accent on hover */
-      }
+    }
 
-      .ham-menu { /* The menu itself */
-        width: 80vw; /* Smaller width */
-        max-width: 300px; /* Max width */
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0; /* Start off-screen */
-        visibility: hidden;
-        transform: translateX(-100%);
-        z-index: 1001; /* Below icon, above page content but below overlay */
-        background-color: var(--ham-menu-bg);
-        transition: transform 0.5s ease, visibility 0.5s;
-        display: flex;
-        flex-direction: column; /* Align items vertically */
-        padding-top: 80px; /* Space for close button or header */
-        box-shadow: var(--ham-menu-shadow);
+    @media only screen and (min-width: 769px) {
+      .hamble {
+        /* Container for hamburger elements */
+        display: none;
+        /* Hide all hamburger-related elements on desktop */
       }
-      .ham-menu > ul {
-        display: flex;
-        flex-flow: column nowrap;
-        width: 100%;
-        padding: 20px;
-      }
-      .ham-menu a {
-        display: block;
-        padding: 15px 20px;
-        font-size: 1.3rem; /* 20.8px */
-        color: var(--ham-link-color);
-        text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
-        border-radius: 5px;
-        margin-bottom: 5px;
-      }
-      .ham-menu a:hover {
-        background-color: var(--accent-color);
-        color: white;
-      }
-      .ham-menu a.current {
-        color: var(--ham-link-current-color);
-        font-weight: bold;
-        background-color: rgba(42, 157, 143, 0.1);
-      }
-       .ham-menu > ul > li {
-        list-style-type: none;
-      }
+    }
+  </style>
+</head>
 
-      #ham-menu:checked ~ .ham-menu {
-        transform: translateX(0);
-        visibility: visible;
-      }
-      
-      .full-page-green { /* Overlay */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-        z-index: 1000; /* Below menu icon and menu, above content */
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.5s, visibility 0.5s;
-      }
-      #ham-menu:checked ~ .full-page-green {
-        opacity: 1;
-        visibility: visible;
-      }
+<body>
+  <header class="banner">
+    <div class="banner-content">
+      <h1 class="banner-title">2026 International Conference on Vision, Language & Learning (WVLL)</h1>
+      <p class="banner-date">18-19 December 2026 • University of North Texas • Denton, Texas, USA</p>
+    </div>
+    <div class="logos">
+    </div>
+    <div class="spn">
+    </div>
+  </header>
 
-      /* Hamburger Icon Lines */
-      [for="ham-menu"] > div {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-flow: column wrap; /* Changed from column wrap to column */
-        justify-content: center; /* Vertically center lines */
-        align-items: center; /* Horizontally center lines */
-      }
-      .menu-line {
-        display: block;
-        width: 22px; /* Slightly wider lines */
-        height: 3px; /* Thicker lines */
-        margin: 3px 0; /* Adjust spacing */
-        background-color: var(--ham-line-color);
-        border-radius: 3px;
-        transition: transform 0.4s ease, opacity 0.3s ease;
-      }
-      /* Animation for X */
-      #ham-menu:checked + label .menu-line:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-      }
-      #ham-menu:checked + label .menu-line:nth-child(2) {
-        opacity: 0;
-        transform: scale(0);
-      }
-      #ham-menu:checked + label .menu-line:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-      }
-      /* Original complex line structure was simplified above to 3 lines */
-      /* Removing styles for .menu-line:nth-child(4,5,6) as they are not needed for a standard 3-line hamburger */
+  <nav class="desktop-navigation">
+    <ul>
+      <li><a class="current" title="Conference Home Page" href="#overview">Home</a></li>
+      <li><a title="About the Conference" href="#overview">About</a></li>
+      <li><a title="Invited Speakers" href="#speakers">Speakers</a></li>
+      <li><a title="Organizers of the Conference" href="#organizers">Organizers</a></li>
+      <li><a title="Program Committee" href="#program-committee">Program Committee</a></li>
+      <li><a title="Conference Social Impact" href="#diversity-plan">Social Impact</a></li>
+      <li><a title="Previous Editions" href="https://wvll.github.io/2024/" target="_blank"
+          rel="noopener noreferrer">Previous Editions</a></li>
+    </ul>
+  </nav>
 
-
-      /* Responsive Adjustments */
-      @media only screen and (max-width: 768px) {
-        body {
-          font-size: 15px;
-        }
-        .container {
-          padding: 20px;
-          margin: 20px 15px; /* Add side margin on mobile */
-          border-radius: 8px;
-        }
-        .desktop-navigation {
-          display: none; /* Hide desktop nav */
-        }
-        label[for="ham-menu"] { /* Hamburger Icon */
-          display: flex; /* Show on mobile, flex for centering lines */
-        }
-        .banner-title {
-          font-size: 2rem; /* Adjust banner title */
-        }
-        .banner-date {
-          font-size: 1rem;
-        }
-        h2 {
-          font-size: 1.8rem;
-        }
-        h3 {
-          font-size: 1.4rem;
-        }
-        .key-areas-list {
-          column-count: 1; /* Single column on mobile */
-        }
-         /* Adjust hamburger icon position if banner is present */
-        label[for="ham-menu"].with-banner-margin {
-          top: 20px; /* Adjust as needed if sticky nav or banner takes space */
-        }
-      }
-      
-      @media only screen and (min-width: 769px) {
-        .hamble { /* Container for hamburger elements */
-            display: none; /* Hide all hamburger-related elements on desktop */
-        }
-      }
-
-    </style>
-  </head>
-
-  <body>
-    <header class="banner">
-      <div class="banner-content">
-        <h1 class="banner-title">2026 International Conference on Vision, Language & Learning (WVLL)</h1>
-        <p class="banner-date">18-19 December 2026 • University of North Texas • Denton, Texas, USA</p>
+  <div class="hamble"> <input type="checkbox" id="ham-menu" />
+    <label for="ham-menu">
+      <div class="hide-des"> <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
       </div>
-      <div class="logos">
-      </div>
-       <div class="spn">
-         </div>
-    </header>
-
-    <nav class="desktop-navigation">
+    </label>
+    <div class="full-page-green"></div>
+    <nav class="ham-menu">
       <ul>
         <li><a class="current" title="Conference Home Page" href="#overview">Home</a></li>
         <li><a title="About the Conference" href="#overview">About</a></li>
@@ -465,257 +598,409 @@
         <li><a title="Organizers of the Conference" href="#organizers">Organizers</a></li>
         <li><a title="Program Committee" href="#program-committee">Program Committee</a></li>
         <li><a title="Conference Social Impact" href="#diversity-plan">Social Impact</a></li>
-        <li><a title="Previous Editions" href="https://wvll.github.io/2024/" target="_blank" rel="noopener noreferrer">Previous Editions</a></li>
+        <li><a title="Previous Editions" href="https://wvll.github.io/2024/" target="_blank"
+            rel="noopener noreferrer">Previous Editions</a></li>
       </ul>
     </nav>
+  </div>
 
-    <div class="hamble"> <input type="checkbox" id="ham-menu" />
-      <label for="ham-menu"> <div class="hide-des"> <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          </div>
-      </label>
-      <div class="full-page-green"></div> <nav class="ham-menu"> <ul>
-            <li><a class="current" title="Conference Home Page" href="#overview">Home</a></li>
-            <li><a title="About the Conference" href="#overview">About</a></li>
-            <li><a title="Invited Speakers" href="#speakers">Speakers</a></li>
-            <li><a title="Organizers of the Conference" href="#organizers">Organizers</a></li>
-            <li><a title="Program Committee" href="#program-committee">Program Committee</a></li>
-            <li><a title="Conference Social Impact" href="#diversity-plan">Social Impact</a></li>
-            <li><a title="Previous Editions" href="https://wvll.github.io/2024/" target="_blank" rel="noopener noreferrer">Previous Editions</a></li>
-            </ul>
-      </nav>
-    </div>
+  <main class="container">
+    <section id="overview">
+      <h2>Conference Overview</h2>
+      <p>
+        The 2026 International Conference on Vision, Language & Learning (WVLL 2026) convenes researchers and
+        practitioners working at the intersection of computer vision, natural language processing, and multimodal
+        learning. Across two days we will explore how to build efficient, responsible, and high-performing
+        vision-language systems that advance understanding, interaction, and accessibility.
+      </p>
 
-    <main class="container">
-      <section id="overview">
-        <h2>Conference Overview</h2>
-        <p>
-          The 2026 International Conference on Vision, Language & Learning (WVLL 2026) convenes researchers and practitioners working at the intersection of computer vision, natural language processing, and multimodal learning. Across two days we will explore how to build efficient, responsible, and high-performing vision-language systems that advance understanding, interaction, and accessibility.
-        </p>
+      <h3>Event Snapshot</h3>
+      <ul>
+        <li><b>Conference Title:</b> 2026 International Conference on Vision, Language & Learning (WVLL)</li>
+        <li><b>Acronym:</b> WVLL 2026</li>
+        <li><b>Dates:</b> 18-19 December 2026</li>
+        <li><b>Venue:</b> University of North Texas</li>
+        <li><b>City:</b> Denton, Texas, USA</li>
+      </ul>
 
-        <h3>Event Snapshot</h3>
+      <h2>Key Areas of Exploration:</h2>
+      <div class="key-areas-list">
         <ul>
-          <li><b>Conference Title:</b> 2026 International Conference on Vision, Language & Learning (WVLL)</li>
-          <li><b>Acronym:</b> WVLL 2026</li>
-          <li><b>Dates:</b> 18-19 December 2026</li>
-          <li><b>Venue:</b> University of North Texas</li>
-          <li><b>City:</b> Denton, Texas, USA</li>
+          <li>AI For Low-Resource Languages</li>
+          <li>Video And Speech Analysis For Low-Resource Languages</li>
+          <li>LLM and VLM Architectures and Neural Design</li>
+          <li>Parameter-Efficient Adaptation of Large Vision-Language Models</li>
+          <li>Applications in Vision-Language Models</li>
+          <li>Tiny VLMs: Efficient Multimodal AI at the Edge</li>
+          <li>New Benchmark Dataset & Evaluation Metrics</li>
+          <li>AI for Sign Language Understanding</li>
+          <li>Document Image Processing</li>
+          <li>Medical Data Analysis</li>
+          <li>Scene Text Detection And Recognition</li>
         </ul>
+      </div>
 
-        <h2>Key Areas of Exploration:</h2>
-        <div class="key-areas-list">
-          <ul>
-            <li>AI For Low-Resource Languages</li>
-            <li>Video And Speech Analysis For Low-Resource Languages</li>
-            <li>LLM and VLM Architectures and Neural Design</li>
-            <li>Parameter-Efficient Adaptation of Large Vision-Language Models</li>
-            <li>Applications in Vision-Language Models</li>
-            <li>Tiny VLMs: Efficient Multimodal AI at the Edge</li>
-            <li>New Benchmark Dataset & Evaluation Metrics</li>
-            <li>AI for Sign Language Understanding</li>
-            <li>Document Image Processing</li>
-            <li>Medical Data Analysis</li>
-            <li>Scene Text Detection And Recognition</li>
-          </ul>
-        </div>
+      <p>
+        WVLL 2026 fosters a rich exchange of ideas that can crystallize common problems and illuminate promising
+        scientific paradigms in vision-language research. We aim to explicitly contrast competing frameworks, clarify
+        essential research questions, and cultivate a stronger community around these shared interests. WVLL
+        distinguishes itself by its balanced emphasis on theoretical advancements in model design and the practical,
+        societal implications of their deployment, particularly in resource-constrained and specialized domains. We
+        encourage the presentation of work-in-progress and forward-looking position papers to spark vibrant discussion
+        and future breakthroughs.
+      </p>
+    </section>
 
-        <p>
-          WVLL 2026 fosters a rich exchange of ideas that can crystallize common problems and illuminate promising scientific paradigms in vision-language research. We aim to explicitly contrast competing frameworks, clarify essential research questions, and cultivate a stronger community around these shared interests. WVLL distinguishes itself by its balanced emphasis on theoretical advancements in model design and the practical, societal implications of their deployment, particularly in resource-constrained and specialized domains. We encourage the presentation of work-in-progress and forward-looking position papers to spark vibrant discussion and future breakthroughs.
-        </p>
-      </section>
+    <section id="speakers">
+      <h2>Invited Speakers</h2>
+      <h3>Confirmed Speakers</h3>
+      <ul>
+        <li><b>Michal Yarom</b>: Research Engineer, Google Research, Israel</li>
+        <li><b>Iftekhar Naim</b>: Senior Staff Software Engineer and Manager at Google DeepMind, USA</li>
+        <li><b>Junaid Kalia MD</b>: Founder; SaveLife.AI, USA</li>
+        <li><b>Veton Kepuska</b>: Professor; Florida Institute of Technology, USA</li>
+        <li><b>Lingzi Hong</b>: Assistant Professor; University of North Texas, USA</li>
+      </ul>
 
-      <section id="speakers">
-        <h2>Invited Speakers</h2>
-        <h3>Confirmed Speakers</h3>
-        <ul>
-          <li><b>Michal Yarom</b>: Research Engineer, Google Research, Israel</li>
-          <li><b>Iftekhar Naim</b>: Senior Staff Software Engineer and Manager at Google DeepMind, USA</li>
-          <li><b>Junaid Kalia MD</b>: Founder; SaveLife.AI, USA</li>
-          <li><b>Veton Kepuska</b>: Professor; Florida Institute of Technology, USA</li>
-          <li><b>Lingzi Hong</b>: Assistant Professor; University of North Texas, USA</li>
-        </ul>
+      <h3>Tentative Speakers</h3>
+      <ul>
+        <li><b>Mohammad Nurul Huda</b>: Professor, United International University, Bangladesh</li>
+        <li><b>Sheak R. Haider Noori</b>: Professor, Daffodil International University, Bangladesh</li>
+        <li><b>Angelina Geetha</b>: Professor; Hindustan Institute of Technology and Science, India</li>
+        <li><b>Mohammad Lutfi Othman</b>: Professor; Universiti Putra Malaysia, Malaysia</li>
+        <li><b>Firoj Alam</b>: Senior Scientist; Qatar Computing Research Institute; Qatar</li>
+      </ul>
+    </section>
 
-        <h3>Tentative Speakers</h3>
-        <ul>
-          <li><b>Mohammad Nurul Huda</b>: Professor, United International University, Bangladesh</li>
-          <li><b>Sheak R. Haider Noori</b>: Professor, Daffodil International University, Bangladesh</li>
-          <li><b>Angelina Geetha</b>: Professor; Hindustan Institute of Technology and Science, India</li>
-          <li><b>Mohammad Lutfi Othman</b>: Professor; Universiti Putra Malaysia, Malaysia</li>
-          <li><b>Firoj Alam</b>: Senior Scientist; Qatar Computing Research Institute; Qatar</li>
-        </ul>
-      </section>
+    <section id="diversity-plan">
+      <h2>Diversity, Equity & Inclusion Plan</h2>
+      <p>
+        WVLL 2026 embeds diversity and inclusion across organizers, speakers, and attendees through concrete, realistic
+        actions. Our committee spans multiple continents and balances academia with industry and NGO perspectives,
+        creating natural mentorship pathways and technical breadth from computer vision to clinical AI. We are
+        recruiting invited speakers through affinity groups and regional mailing lists to secure meaningful
+        representation of women, non-binary scholars, and researchers based in the Global South. The gender-neutral CFP
+        explicitly welcomes work on sign-language AI, low-resource languages, and edge deployment in underserved
+        regions, while an optional mentored-review track pairs junior authors with experienced PC members. External
+        sponsorships will fund travel stipends prioritized for students from low- and middle-income countries and for
+        caregivers. Live captioning, wheelchair-accessible poster spacing, and an anonymous code-of-conduct reporting
+        channel coordinated by our DEI chair will ensure a safe, inclusive environment, making diversity and broad
+        participation integral to WVLL 2026 rather than an afterthought.
+      </p>
+    </section>
 
-      <section id="diversity-plan">
-        <h2>Diversity, Equity & Inclusion Plan</h2>
-        <p>
-          WVLL 2026 embeds diversity and inclusion across organizers, speakers, and attendees through concrete, realistic actions. Our committee spans multiple continents and balances academia with industry and NGO perspectives, creating natural mentorship pathways and technical breadth from computer vision to clinical AI. We are recruiting invited speakers through affinity groups and regional mailing lists to secure meaningful representation of women, non-binary scholars, and researchers based in the Global South. The gender-neutral CFP explicitly welcomes work on sign-language AI, low-resource languages, and edge deployment in underserved regions, while an optional mentored-review track pairs junior authors with experienced PC members. External sponsorships will fund travel stipends prioritized for students from low- and middle-income countries and for caregivers. Live captioning, wheelchair-accessible poster spacing, and an anonymous code-of-conduct reporting channel coordinated by our DEI chair will ensure a safe, inclusive environment, making diversity and broad participation integral to WVLL 2026 rather than an afterthought.
-        </p>
-      </section>
+    <section id="attendees">
+      <h2>Estimated Number of Attendees</h2>
+      <p>
+        Given the growing interest in multimodal AI - especially low-resource language processing, efficient model
+        adaptation, and applied vision-language systems - we anticipate 120–150 participants from academia and industry.
+        This includes researchers, practitioners, and students focused on vision-language learning, efficient model
+        design, and AI applications for underrepresented and resource-constrained domains.
+      </p>
+    </section>
 
-      <section id="attendees">
-        <h2>Estimated Number of Attendees</h2>
-        <p>
-          Given the growing interest in multimodal AI - especially low-resource language processing, efficient model adaptation, and applied vision-language systems - we anticipate 120–150 participants from academia and industry. This includes researchers, practitioners, and students focused on vision-language learning, efficient model design, and AI applications for underrepresented and resource-constrained domains.
-        </p>
-      </section>
+    <section id="requirements">
+      <h2>Special Requirements and Technical Needs</h2>
+      <p>
+        WVLL 2026 is a two-day, in-person conference hosted at the University of North Texas. We request a standard A/V
+        setup (projector with HDMI input, screen, microphones for speakers and audience), reliable internet to support
+        live demos, and poster space for approximately 20–25 physical posters. We will also need a table area for
+        interactive demos related to vision-language systems. The venue should provide wheelchair accessibility
+        throughout.
+      </p>
+    </section>
 
-      <section id="requirements">
-        <h2>Special Requirements and Technical Needs</h2>
-        <p>
-          WVLL 2026 is a two-day, in-person conference hosted at the University of North Texas. We request a standard A/V setup (projector with HDMI input, screen, microphones for speakers and audience), reliable internet to support live demos, and poster space for approximately 20–25 physical posters. We will also need a table area for interactive demos related to vision-language systems. The venue should provide wheelchair accessibility throughout.
-        </p>
-      </section>
+    <section id="previous-workshop">
+      <h2>Previous Editions</h2>
+      <p>
+        WVLL previously ran as a workshop at WACV 2024, focusing on vision-language learning for low-resource languages,
+        parameter-efficient model adaptation, and applied multimodal AI. That edition received 14 submissions (3
+        accepted) with authors spanning Bangladesh, the United States, and India, and a reviewer pool of 32 experts.
+        Building on this momentum, WVLL 2026 expands into a full conference to broaden reach, deepen technical exchange,
+        and grow the community.
+      </p>
+      <p><b>URL of previous workshop:</b> <a href="https://wvll.github.io/2024" target="_blank"
+          rel="noopener noreferrer">https://wvll.github.io/2024</a></p>
+    </section>
 
-      <section id="previous-workshop">
-        <h2>Previous Editions</h2>
-        <p>
-          WVLL previously ran as a workshop at WACV 2024, focusing on vision-language learning for low-resource languages, parameter-efficient model adaptation, and applied multimodal AI. That edition received 14 submissions (3 accepted) with authors spanning Bangladesh, the United States, and India, and a reviewer pool of 32 experts. Building on this momentum, WVLL 2026 expands into a full conference to broaden reach, deepen technical exchange, and grow the community.
-        </p>
-        <p><b>URL of previous workshop:</b> <a href="https://wvll.github.io/2024" target="_blank" rel="noopener noreferrer">https://wvll.github.io/2024</a></p>
-      </section>
+    <section id="organizers">
+      <h2>Brief Bios of Organizers</h2>
 
-      <section id="organizers">
-        <h2>Brief Bios of Organizers</h2>
+      <p><b>Fuad Rahman:</b> Fuad Rahman, Ph.D., is an academician and entrepreneur who founded Apurba Technologies,
+        specializing in machine learning. He is also an Adjunct Professor at the University of Arizona's BME Department.
+        His company actively works on computerizing Bangla, a low-resource language, developing the first commercial
+        Bangla OCR and screen reader. He has over 100 peer-reviewed publications.<br>
+        Email: <a href="mailto:fuad@apurbatech.com">fuad@apurbatech.com</a> | Website: <a href="http://apurbatech.com"
+          target="_blank" rel="noopener noreferrer">apurbatech.com</a></p>
 
-        <p><b>Fuad Rahman:</b> Fuad Rahman, Ph.D., is an academician and entrepreneur who founded Apurba Technologies, specializing in machine learning. He is also an Adjunct Professor at the University of Arizona's BME Department. His company actively works on computerizing Bangla, a low-resource language, developing the first commercial Bangla OCR and screen reader. He has over 100 peer-reviewed publications.<br>
-        Email: <a href="mailto:fuad@apurbatech.com">fuad@apurbatech.com</a> | Website: <a href="http://apurbatech.com" target="_blank" rel="noopener noreferrer">apurbatech.com</a></p>
+      <p><b>Syed Akhter Hossain:</b> Dr. Syed Akhter Hossain is a Dean & Professor at UCSI University. He has
+        significantly advanced NLP research and has over 250
+        publications. A recipient of the Best Professor of IT Award (2012) and National ICT Award (2016), he notably
+        developed a machine translator for Bangla Braille.<br>
+        Email: <a href="mailto:deanfsit@daffodilvarsity.edu.bd">deanfsit@daffodilvarsity.edu.bd</a> | Website: <a
+          href="https://faculty.daffodilvarsity.edu.bd/profile/swe/akhter.html" target="_blank"
+          rel="noopener noreferrer">https://faculty.daffodilvarsity.edu.bd/profile/swe/akhter.html</a></p>
 
-        <p><b>Syed Akhter Hossain:</b> Dr. Syed Akhter Hossain is the Dean of the Faculty of Science and Information Technologies at Daffodil International University. He has significantly advanced NLP research and has over 250 publications. A recipient of the Best Professor of IT Award (2012) and National ICT Award (2016), he notably developed a machine translator for Bangla Braille.<br>
-        Email: <a href="mailto:deanfsit@daffodilvarsity.edu.bd">deanfsit@daffodilvarsity.edu.bd</a> | Website: <a href="https://faculty.daffodilvarsity.edu.bd/profile/swe/akhter.html" target="_blank" rel="noopener noreferrer">https://faculty.daffodilvarsity.edu.bd/profile/swe/akhter.html</a></p>
+      <p><b>Mouhaydine Tlemcani:</b> Dr. Mouhaydine Tlemcani is an Assistant Professor at the University of Évora,
+        instrumental in their Mechatronics Engineering program. He holds an M.Sc. (1992) and Ph.D. (2007) in Electrical
+        Engineering. His research includes instrumentation, signal/image processing, embedded systems, and AI
+        applications in engineering, leading projects like non-destructive testing for aeronautic maintenance.<br>
+        Email: <a href="mailto:tlem@uevora.pt">tlem@uevora.pt</a> | Website: <a
+          href="https://www.uevora.pt/pessoas?id=5279" target="_blank"
+          rel="noopener noreferrer">https://www.uevora.pt/pessoas?id=5279</a></p>
 
-        <p><b>Mouhaydine Tlemcani:</b> Dr. Mouhaydine Tlemcani is an Assistant Professor at the University of Évora, instrumental in their Mechatronics Engineering program. He holds an M.Sc. (1992) and Ph.D. (2007) in Electrical Engineering. His research includes instrumentation, signal/image processing, embedded systems, and AI applications in engineering, leading projects like non-destructive testing for aeronautic maintenance.<br>
-        Email: <a href="mailto:tlem@uevora.pt">tlem@uevora.pt</a> | Website: <a href="https://www.uevora.pt/pessoas?id=5279" target="_blank" rel="noopener noreferrer">https://www.uevora.pt/pessoas?id=5279</a></p>
+      <p><b>Tozammel Hossain:</b> Dr. Tozammel Hossain is an Assistant Professor at the University of North Texas,
+        specializing in applied machine learning, causal inference, and biomedical informatics. With a Ph.D. from
+        Virginia Tech and postdoctoral experience at USC, he has contributed to high-impact projects funded by IARPA,
+        DARPA, DHS, and USDA. He has published in leading journals and presented at top conferences.<br>
+        Email: <a href="mailto:tozammel.hossain@unt.edu">tozammel.hossain@unt.edu</a> | Website: <a
+          href="https://facultyinfo.unt.edu/faculty-profile?profile=kh0718" target="_blank"
+          rel="noopener noreferrer">https://facultyinfo.unt.edu/faculty-profile?profile=kh0718</a></p>
 
-        <p><b>Tozammel Hossain:</b> Dr. Tozammel Hossain is an Assistant Professor at the University of North Texas, specializing in applied machine learning, causal inference, and biomedical informatics. With a Ph.D. from Virginia Tech and postdoctoral experience at USC, he has contributed to high-impact projects funded by IARPA, DARPA, DHS, and USDA. He has published in leading journals and presented at top conferences.<br>
-        Email: <a href="mailto:tozammel.hossain@unt.edu">tozammel.hossain@unt.edu</a> | Website: <a href="https://facultyinfo.unt.edu/faculty-profile?profile=kh0718" target="_blank" rel="noopener noreferrer">https://facultyinfo.unt.edu/faculty-profile?profile=kh0718</a></p>
+      <p><b>Tazin Afrin:</b> Dr. Tazin Afrin holds a Ph.D. in Computer Science from the University of Pittsburgh, with
+        expertise in NLP, educational technology, and human-computer interaction. She developed the ArgRewrite revision
+        assistant and published in top-tier venues. At ETS, she develops advanced AI systems using LLMs and machine
+        learning.<br>
+        Email: <a href="mailto:tazin.tumpa@gmail.com">tazin.tumpa@gmail.com</a> | Website: <a
+          href="https://tazin-afrin.github.io" target="_blank"
+          rel="noopener noreferrer">https://tazin-afrin.github.io</a></p>
 
-        <p><b>Tazin Afrin:</b> Dr. Tazin Afrin holds a Ph.D. in Computer Science from the University of Pittsburgh, with expertise in NLP, educational technology, and human-computer interaction. She developed the ArgRewrite revision assistant and published in top-tier venues. At ETS, she develops advanced AI systems using LLMs and machine learning.<br>
-        Email: <a href="mailto:tazin.tumpa@gmail.com">tazin.tumpa@gmail.com</a> | Website: <a href="https://tazin-afrin.github.io" target="_blank" rel="noopener noreferrer">https://tazin-afrin.github.io</a></p>
+      <p><b>Ting Xiao:</b> Dr. Ting Xiao is an Assistant Professor in Data Science at the University of North Texas
+        (UNT) and Director of the Deep Sensor Information eXtraction (SIX) Lab. She holds a Ph.D. in Physics from
+        Northwestern University. Her research focuses on Machine Learning/Deep Learning, Vector Embeddings, Multimodal
+        Large Language Models, and Clinical/Biomedical AI, with over 100 publications and an h-index of 36.<br>
+        Email: <a href="mailto:Ting.Xiao@unt.edu">Ting.Xiao@unt.edu</a> | Website: <a
+          href="https://engineering.unt.edu/people/ting-xiao.html" target="_blank"
+          rel="noopener noreferrer">https://engineering.unt.edu/people/ting-xiao.html</a></p>
 
-        <p><b>Ting Xiao:</b> Dr. Ting Xiao is an Assistant Professor in Data Science at the University of North Texas (UNT) and Director of the Deep Sensor Information eXtraction (SIX) Lab. She holds a Ph.D. in Physics from Northwestern University. Her research focuses on Machine Learning/Deep Learning, Vector Embeddings, Multimodal Large Language Models, and Clinical/Biomedical AI, with over 100 publications and an h-index of 36.<br>
-        Email: <a href="mailto:Ting.Xiao@unt.edu">Ting.Xiao@unt.edu</a> | Website: <a href="https://engineering.unt.edu/people/ting-xiao.html" target="_blank" rel="noopener noreferrer">https://engineering.unt.edu/people/ting-xiao.html</a></p>
+      <p><b>Sadia Afroz:</b> Dr. Sadia Afroz is a Lead Scientist at Gen&trade;, leading research in Security and Machine
+        Learning. She holds a Ph.D. in Computer Science from Drexel University, specializing in Computer Security. Her
+        expertise lies at the intersection of security, privacy, and machine learning. She previously served as a
+        Research Professor at ICSI and a Staff Scientist at Avast.<br>
+        Email: <a href="mailto:sadia@icsi.berkeley.edu">sadia@icsi.berkeley.edu</a> | Website: <a
+          href="https://www.icsi.berkeley.edu/icsi/people/sadia" target="_blank"
+          rel="noopener noreferrer">https://www.icsi.berkeley.edu/icsi/people/sadia</a></p>
 
-        <p><b>Sadia Afroz:</b> Dr. Sadia Afroz is a Lead Scientist at Gen&trade;, leading research in Security and Machine Learning. She holds a Ph.D. in Computer Science from Drexel University, specializing in Computer Security. Her expertise lies at the intersection of security, privacy, and machine learning. She previously served as a Research Professor at ICSI and a Staff Scientist at Avast.<br>
-        Email: <a href="mailto:sadia@icsi.berkeley.edu">sadia@icsi.berkeley.edu</a> | Website: <a href="https://www.icsi.berkeley.edu/icsi/people/sadia" target="_blank" rel="noopener noreferrer">https://www.icsi.berkeley.edu/icsi/people/sadia</a></p>
+      <p><b>Sheikh Abujar:</b> Sheikh Abujar is a Ph.D. candidate in Computer Science at UAB, researching deep learning,
+        vision-language models (VLMs), and clinical natural language processing. He interned at Samsung Research America
+        (2024) and co-led impactful projects, including creating low-resource datasets like Bayanno (Bangla Speech) and
+        IsharaLipi (Bangla Sign Language).<br>
+        Email: <a href="mailto:sabujar@uab.edu">sabujar@uab.edu</a> | Website: <a
+          href="https://sites.google.com/site/iamabujarsheikh" target="_blank"
+          rel="noopener noreferrer">https://sites.google.com/site/iamabujarsheikh</a></p>
 
-        <p><b>Sheikh Abujar:</b> Sheikh Abujar is a Ph.D. candidate in Computer Science at UAB, researching deep learning, vision-language models (VLMs), and clinical natural language processing. He interned at Samsung Research America (2024) and co-led impactful projects, including creating low-resource datasets like Bayanno (Bangla Speech) and IsharaLipi (Bangla Sign Language).<br>
-        Email: <a href="mailto:sabujar@uab.edu">sabujar@uab.edu</a> | Website: <a href="https://sites.google.com/site/iamabujarsheikh" target="_blank" rel="noopener noreferrer">https://sites.google.com/site/iamabujarsheikh</a></p>
+      <p><b>AKM Shahariar Azad Rabby:</b> Shahariar Rabby is a researcher at the UAB Lung Imaging Lab and Machine
+        Learning team lead at Apurba Technologies, specializing in OCR, Document Analyses, and Low-Resource Language
+        Vision. He developed "Ekush," the largest Bangla handwritten dataset, and co-founded/supervised the CI LAB and
+        DIU - NLP and Machine Learning Research LAB.<br>
+        Email: <a href="mailto:arabby@uab.edu">arabby@uab.edu</a> | Website: <a href="http://rabby.dev" target="_blank"
+          rel="noopener noreferrer">rabby.dev</a></p>
 
-        <p><b>AKM Shahariar Azad Rabby:</b> Shahariar Rabby is a researcher at the UAB Lung Imaging Lab and Machine Learning team lead at Apurba Technologies, specializing in OCR, Document Analyses, and Low-Resource Language Vision. He developed "Ekush," the largest Bangla handwritten dataset, and co-founded/supervised the CI LAB and DIU - NLP and Machine Learning Research LAB.<br>
-        Email: <a href="mailto:arabby@uab.edu">arabby@uab.edu</a> | Website: <a href="http://rabby.dev" target="_blank" rel="noopener noreferrer">rabby.dev</a></p>
+      <p><b>Muntaser Syed:</b> Muntaser Syed is a GPU Developer Advocate at NVIDIA and technical lead for the Open
+        Hackathons team, focusing on accelerating research on supercomputing clusters. A Ph.D. scholar, his interests
+        include machine learning on edge devices, NLP, and speech recognition. He contributed to UAV control systems and
+        the FAA's LAANC program.<br>
+        Email: <a href="mailto:muntasers@nvidia.com">muntasers@nvidia.com</a> | Website: <a
+          href="https://www.linkedin.com/in/muntasersyed" target="_blank"
+          rel="noopener noreferrer">https://www.linkedin.com/in/muntasersyed</a></p>
+    </section>
 
-        <p><b>Muntaser Syed:</b> Muntaser Syed is a GPU Developer Advocate at NVIDIA and technical lead for the Open Hackathons team, focusing on accelerating research on supercomputing clusters. A Ph.D. scholar, his interests include machine learning on edge devices, NLP, and speech recognition. He contributed to UAV control systems and the FAA's LAANC program.<br>
-        Email: <a href="mailto:muntasers@nvidia.com">muntasers@nvidia.com</a> | Website: <a href="https://www.linkedin.com/in/muntasersyed" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/muntasersyed</a></p>
-      </section>
+    <section id="program-committee">
+      <h2>Confirmed Program Committee Members</h2>
+      <table class="committee-table">
+        <thead>
+          <tr>
+            <th>Reviewer</th>
+            <th>Organization</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Abdus Sattar</td>
+            <td>Daffodil International University, Bangladesh</td>
+          </tr>
+          <tr>
+            <td>Abu Kaisar Mohammad Masum</td>
+            <td>Florida Institute of Technology, USA</td>
+          </tr>
+          <tr>
+            <td>Jagdish Chand Bansal</td>
+            <td>South Asian University, India</td>
+          </tr>
+          <tr>
+            <td>Stephen Olatunde Olabiyisi</td>
+            <td>Ladoke Akintola University of Technology, Nigeria</td>
+          </tr>
+          <tr>
+            <td>Sunil Kumar Khatri</td>
+            <td>Amity University Tashkent, Uzbekistan</td>
+          </tr>
+          <tr>
+            <td>Yagyanath Rimal</td>
+            <td>Pokhara University, Nepal</td>
+          </tr>
+          <tr>
+            <td>Ghalib Hussaiyn</td>
+            <td>PayPal</td>
+          </tr>
+          <tr>
+            <td>Hasmot Ali</td>
+            <td>Apurba Technologies Ltd</td>
+          </tr>
+          <tr>
+            <td>Md. Fahad Hossain</td>
+            <td>Daffodil International University, Bangladesh</td>
+          </tr>
+          <tr>
+            <td>Mahmudul Hasan</td>
+            <td>Comilla University, Bangladesh</td>
+          </tr>
+          <tr>
+            <td>Mohammad Mamun Or Rashid</td>
+            <td>Jahangirnagar University, Bangladesh</td>
+          </tr>
+          <tr>
+            <td>Md Majedul Islam</td>
+            <td>Kennesaw State University, USA</td>
+          </tr>
+          <tr>
+            <td>Md. Sanzidul Islam</td>
+            <td>King Abdulaziz University, Saudi Arabia</td>
+          </tr>
+          <tr>
+            <td>Mirza Sami</td>
+            <td>Deka Research & Development</td>
+          </tr>
+          <tr>
+            <td>Mohammad Shorif Uddin</td>
+            <td>Jahangirnagar University, Bangladesh</td>
+          </tr>
+          <tr>
+            <td>Mouhaydine Tlemcani</td>
+            <td>Universidade de Évora, Portugal</td>
+          </tr>
+          <tr>
+            <td>Nabeel Mohammed</td>
+            <td>North South University, Bangladesh</td>
+          </tr>
+          <tr>
+            <td>Naveed Mahmud</td>
+            <td>Florida Institute of Technology, USA</td>
+          </tr>
+          <tr>
+            <td>Nushrat Jahan Ria</td>
+            <td>Daffodil International University, Bangladesh</td>
+          </tr>
+          <tr>
+            <td>Pratim Saha</td>
+            <td>University of Alabama at Birmingham, USA</td>
+          </tr>
+          <tr>
+            <td>S.R. Subramanya</td>
+            <td>National University (San Diego, USA) / Exskillence</td>
+          </tr>
+          <tr>
+            <td>S.M. Saiful Islam Badhon</td>
+            <td>University of North Texas, USA</td>
+          </tr>
+          <tr>
+            <td>Saif Islam</td>
+            <td>Charles Schwab</td>
+          </tr>
+          <tr>
+            <td>Sandeep Bodduluri</td>
+            <td>University of Alabama at Birmingham, USA</td>
+          </tr>
+          <tr>
+            <td>Sharun Akter Khushbu</td>
+            <td>Daffodil International University, Bangladesh</td>
+          </tr>
+          <tr>
+            <td>Syed Ashiqur Rahman</td>
+            <td>GSK, USA</td>
+          </tr>
+          <tr>
+            <td>Tanvir Ahmed</td>
+            <td>University of Central Florida, USA</td>
+          </tr>
+          <tr>
+            <td>S.M. Mazharul Hoque Chowdhury</td>
+            <td>University of North Texas, USA</td>
+          </tr>
+          <tr>
+            <td>Monjurul Huda</td>
+            <td>Amazon</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-      <section id="program-committee">
-        <h2>Confirmed Program Committee Members</h2>
-        <table class="committee-table">
-          <thead>
-            <tr>
-              <th>Reviewer</th>
-              <th>Organization</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Abdus Sattar</td><td>Daffodil International University, Bangladesh</td></tr>
-            <tr><td>Abu Kaisar Mohammad Masum</td><td>Florida Institute of Technology, USA</td></tr>
-            <tr><td>Jagdish Chand Bansal</td><td>South Asian University, India</td></tr>
-            <tr><td>Stephen Olatunde Olabiyisi</td><td>Ladoke Akintola University of Technology, Nigeria</td></tr>
-            <tr><td>Sunil Kumar Khatri</td><td>Amity University Tashkent, Uzbekistan</td></tr>
-            <tr><td>Yagyanath Rimal</td><td>Pokhara University, Nepal</td></tr>
-            <tr><td>Ghalib Hussaiyn</td><td>PayPal</td></tr>
-            <tr><td>Hasmot Ali</td><td>Apurba Technologies Ltd</td></tr>
-            <tr><td>Md. Fahad Hossain</td><td>Daffodil International University, Bangladesh</td></tr>
-            <tr><td>Mahmudul Hasan</td><td>Comilla University, Bangladesh</td></tr>
-            <tr><td>Mohammad Mamun Or Rashid</td><td>Jahangirnagar University, Bangladesh</td></tr>
-            <tr><td>Md Majedul Islam</td><td>Kennesaw State University, USA</td></tr>
-            <tr><td>Md. Sanzidul Islam</td><td>King Abdulaziz University, Saudi Arabia</td></tr>
-            <tr><td>Mirza Sami</td><td>Deka Research & Development</td></tr>
-            <tr><td>Mohammad Shorif Uddin</td><td>Jahangirnagar University, Bangladesh</td></tr>
-            <tr><td>Mouhaydine Tlemcani</td><td>Universidade de Évora, Portugal</td></tr>
-            <tr><td>Nabeel Mohammed</td><td>North South University, Bangladesh</td></tr>
-            <tr><td>Naveed Mahmud</td><td>Florida Institute of Technology, USA</td></tr>
-            <tr><td>Nushrat Jahan Ria</td><td>Daffodil International University, Bangladesh</td></tr>
-            <tr><td>Pratim Saha</td><td>University of Alabama at Birmingham, USA</td></tr>
-            <tr><td>S.R. Subramanya</td><td>National University (San Diego, USA) / Exskillence</td></tr>
-            <tr><td>S.M. Saiful Islam Badhon</td><td>University of North Texas, USA</td></tr>
-            <tr><td>Saif Islam</td><td>Charles Schwab</td></tr>
-            <tr><td>Sandeep Bodduluri</td><td>University of Alabama at Birmingham, USA</td></tr>
-            <tr><td>Sharun Akter Khushbu</td><td>Daffodil International University, Bangladesh</td></tr>
-            <tr><td>Syed Ashiqur Rahman</td><td>GSK, USA</td></tr>
-            <tr><td>Tanvir Ahmed</td><td>University of Central Florida, USA</td></tr>
-            <tr><td>S.M. Mazharul Hoque Chowdhury</td><td>University of North Texas, USA</td></tr>
-            <tr><td>Monjurul Huda</td><td>Amazon</td></tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
+  <footer>
+    <p
+      style="text-align: center; padding: 20px 0; background-color: var(--nav-bg-color); color: var(--nav-link-color); margin-top: 30px; font-size: 0.9rem;">
+      &copy; 2026 WVLL Conference Organizers. All rights reserved.
+    </p>
+  </footer>
 
-    <footer>
-        <p style="text-align: center; padding: 20px 0; background-color: var(--nav-bg-color); color: var(--nav-link-color); margin-top: 30px; font-size: 0.9rem;">
-            &copy; 2026 WVLL Conference Organizers. All rights reserved.
-        </p>
-    </footer>
-
-    <script>
-      // Smooth scroll for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          const hrefAttribute = this.getAttribute('href');
-          if (hrefAttribute && hrefAttribute.startsWith('#') && hrefAttribute.length > 1) {
-            const targetElement = document.querySelector(hrefAttribute);
-            if (targetElement) {
-              e.preventDefault();
-              targetElement.scrollIntoView({
-                behavior: 'smooth'
-              });
-              // If it's a hamburger menu link, close the menu
-              const hamMenuCheckbox = document.getElementById('ham-menu');
-              if (hamMenuCheckbox && hamMenuCheckbox.checked) {
-                hamMenuCheckbox.checked = false;
-              }
+  <script>
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const hrefAttribute = this.getAttribute('href');
+        if (hrefAttribute && hrefAttribute.startsWith('#') && hrefAttribute.length > 1) {
+          const targetElement = document.querySelector(hrefAttribute);
+          if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+            // If it's a hamburger menu link, close the menu
+            const hamMenuCheckbox = document.getElementById('ham-menu');
+            if (hamMenuCheckbox && hamMenuCheckbox.checked) {
+              hamMenuCheckbox.checked = false;
             }
           }
-        });
+        }
       });
+    });
 
-      // Update current navigation link based on scroll position
-      const sections = document.querySelectorAll('main section[id]');
-      const navLinksDesktop = document.querySelectorAll('.desktop-navigation a');
-      const navLinksMobile = document.querySelectorAll('.ham-menu a');
+    // Update current navigation link based on scroll position
+    const sections = document.querySelectorAll('main section[id]');
+    const navLinksDesktop = document.querySelectorAll('.desktop-navigation a');
+    const navLinksMobile = document.querySelectorAll('.ham-menu a');
 
-      function changeLinkState() {
-        let index = sections.length;
+    function changeLinkState() {
+      let index = sections.length;
 
-        while(--index && window.scrollY + 100 < sections[index].offsetTop) {} // 100px offset
-        
-        function updateLinks(navLinks) {
-          navLinks.forEach((link) => link.classList.remove('current'));
-          // Check if the link corresponding to the current section exists
-          const currentLink = Array.from(navLinks).find(link => link.getAttribute('href') === '#' + sections[index].id);
-          if (currentLink) {
-            currentLink.classList.add('current');
-          } else if (navLinks.length > 0) { // Fallback to the first link if no section matches (e.g. top of page)
-             if (window.scrollY < sections[0].offsetTop - 100) { // If above the first section
-                const homeLink = Array.from(navLinks).find(link => link.getAttribute('href') === '#overview');
-                if (homeLink) homeLink.classList.add('current');
-             }
+      while (--index && window.scrollY + 100 < sections[index].offsetTop) { } // 100px offset
+
+      function updateLinks(navLinks) {
+        navLinks.forEach((link) => link.classList.remove('current'));
+        // Check if the link corresponding to the current section exists
+        const currentLink = Array.from(navLinks).find(link => link.getAttribute('href') === '#' + sections[index].id);
+        if (currentLink) {
+          currentLink.classList.add('current');
+        } else if (navLinks.length > 0) { // Fallback to the first link if no section matches (e.g. top of page)
+          if (window.scrollY < sections[0].offsetTop - 100) { // If above the first section
+            const homeLink = Array.from(navLinks).find(link => link.getAttribute('href') === '#overview');
+            if (homeLink) homeLink.classList.add('current');
           }
         }
-        
-        updateLinks(navLinksDesktop);
-        updateLinks(navLinksMobile);
       }
 
-      // Initial call
-      if (sections.length > 0) {
-        changeLinkState();
-        window.addEventListener('scroll', changeLinkState);
-      }
+      updateLinks(navLinksDesktop);
+      updateLinks(navLinksMobile);
+    }
 
-    </script>
+    // Initial call
+    if (sections.length > 0) {
+      changeLinkState();
+      window.addEventListener('scroll', changeLinkState);
+    }
 
-  </body>
+  </script>
+
+</body>
+
 </html>
