@@ -1,6 +1,6 @@
 # WVLL 2026 Conference Website
 
-Static site for the **2026 International Conference on Vision, Language & Learning (WVLL)** hosted at the University of North Texas (Dec 18-19, 2026). The repository also contains the archived **WVLL 2024** workshop site under `/2024`.
+Static site for the **2026 International Winter Conference on Vision, Language & Learning (WVLL)** hosted at the University of North Texas (Dec 18-19, 2026). The repository also contains the archived **WVLL 2024** workshop site under `/2024`.
 
 ## Project Structure
 - `/index.html` — 2026 home page with in-page sections (about, speakers, organizers, program committee, DEI, requirements, previous editions).
